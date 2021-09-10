@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ying's Code Blog</title>
+<title>Ying Web Desgin & Developing</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link href="styles/main.css" rel="stylesheet" type="text/css">
 
 </head>
   <body>
-    <header>
-      <h1>WEB DESIGN & DEVELOPE JOURNAL</h1> 
-      <p> Some stories & Internet I come across while learning to code. </p>
-    </header>
-
-    <div class ="BYOcupCorner">
-      <h3>Kia ora Taiao! (Hello World!) to BYO Cup Corner</h3>
-      <!-- <p> Note from Internet: </p>
-      <a> Time to focus </a>
-      <a> Git Cheat Sheet </a> -->
-    </div>
-    
-    <div class="main">
+    <div class="page-container">
+      <div class ="Grid-cell">
+        <!-- <div class="header"> -->
+        <a href ="index.html"><img class="logo" src="images/IconYing.svg" alt="logo" ></a>
+        
+        <div class="header-content">
+            <h1>WEB DESIGN &amp; DEVELOPE JOURNAL</h1>
+            <p class ="TopBottomLine">  
+              By ying: Some stories &amp; Internet I come across while learning to code. 
+            </p>
+        </div>
+        <div style="flex: auto;"></div>
+        <div class="top-nav">
+          <button><a href ="template.html">Story</a></button>
+          <button><a href ="html-css.html">Technical Blog</a></button>
+          <button><a href ="identity-value.html">Value</a></button>
+      </div>
+    <!-- </div> -->
+  </div>
+    <div class ="Grid-cell">
+      <div class="Main-content">
+      <h2>B.Y.O. Cup Corner</h2>
       <div class="monospaced">
           _____                    _____                    _____            _____           _______         
          /\    \                  /\    \                  /\    \          /\    \         /::\    \        
@@ -42,35 +51,55 @@
         /:::/    /              \:::\____\               \:::\____\       \:::\____\        \::/____/        
         \::/    /                \::/    /                \::/    /        \::/    /         ~~              
          \/____/                  \/____/                  \/____/          \/____/                          
-                                                                                                                                                                                                                                                                                                
-    </div>
-      <h3>Space Html</h3> 
-      <p> This is a universe yet to discover... I have so much to learn! <br>
-        This week, I am discovering Ascii Art. There is a lot of space practicing at first using "& n b s p"(without space); to make non-breaking space. <br>
-        However, you can also put it on css style "white-space: pre;" if you copy and paste from some generator website like I did :-) <br>
-        Have fun!!!
-      <a href="http://patorjk.com/software/taag/#p=display&f=Alpha&t=hello">Click Here to generate your text</a> 
+      </div>
+  
+  <div class="Content">
+      <p>Kia ora Taiao! (Hello World!)<br>        
+         <h3>ASCII ART to learn Html Space</h3> 
+         This is a universe yet to discover... I have so much to learn! ((&nbsp; ͡• ʖ&nbsp; ͡• )))<br>
+        This week, I am discovering Ascii Art. There is a lot of space practicing at first using <b>&amp;nbsp;</b>; to make non-breaking space. 
+        You can also put it on <b> CSS styling</b> using <b> white-space: pre</b> if you copy and paste from some generator website like I did :-)
+        However, it come accross with a problem when you change screen size that I realize when I inspect the source code. I am guessing maybe to change font size for different screen size.
       </p>
+      <p>
+        Click here to have fun generating your ASCII text in a new tab!!! &#128516
+      </p>
+        <button id="btn-inline">
+          <a href="http://patorjk.com/software/taag/#p=display&amp;f=Alpha&amp;t=hello" target="_blank" rel="noopener noreferrer" >ASCII Text Generator </a> <br>
+        </button>
+        <button id="btn-inline">
+          <a href="https://www.w3schools.com/charsets/ref_emoji.asp" target="_blank" rel="emoji" >HTML ref_emoji </a> <br>
+        </button>
     </div>
-  </body>
-
-  <div class="programmingStep">
-    <h3>Some steps to a solutions, Let me help you :-)</h3>
-    <li> Define the problem</li>
-    <li> Project Planning</li>
-    <li> Coding the program</li>
-    <li> Testing the program</li>
-    <li> Check it out!!</li>
-    </ol>
   </div>
 
+  <div class ="Grid-cell">
+<div class ="Side-content">
+  
   <div class="weatherBoard">
     <h3>Weather Today</h3>
-    <p> 16°C</p>
-    <p> Location</p>
-    <p> Auckland</p>
-  
+    <iframe id="widget-iframe" width="300px" height="195px"
+src="https://services.metservice.com/weather-widget/widget?params=blue|medium|portrait|days-3|classic&amp;loc=auckland&amp;type=urban" allowtransparency="true" style="border:none"></iframe>
+  </div>
+  <h3>Link to Cheatsheet &amp; Tools: </h3>    
+    <div class="notes">
+        <li><a href="https://pomofocus.io" target="_blank" rel="Pomodoro Focus Website" >Pomofocus.io </a></li>
+        <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" >Git Cheat Sheet </a></li>
+        <li><a href="https://htmlcheatsheet.com/" >Html CSS Cheatsheet</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank" rel="CSS color reference" >CSS Color </a></li>
+        <li><a href="https://emojipedia.org" target="_blank" rel="CSS color reference" >Emojipedia</a></li>
+        <li><a href="html-css.html" target="_blank" rel="CSS reference" >My CSS Playground</a></li>
+      </ul>
   </div>
 
-  <footer>Copyright @ Curious Earthworm 2021</footer>
+</div>
+
+</div>
+      </div> 
+
+  <footer>
+    Copyright @ Curious Earthworm 2021
+  </footer>
+
+</body>
 </html>

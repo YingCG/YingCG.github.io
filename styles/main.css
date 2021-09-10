@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Azeret Mono', monospace;
+}
+
+body{
+    position: relative;
+    font-size: 15px;
+    color: #006A71;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+h1{
+    margin-block-start: 0.35em;
+    margin-block-end: 0.1em;
+    font-weight: 250;
+    font-size: 45px;
+}
+
+h2{
+    margin-block-start: 0px;
+    margin-block-end: 0.2em;
+}
+
+
+h3{
+    margin-block-start: 0px;
+    margin-block-end: 0.2em;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+.logo{
+    margin: 20px;
+    width: 75px;
+    height: auto;
+}
+
+.logo path{
+    fill: #006A71;
+}
+
+.top-nav{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.top-nav button{
+    /* margin-block-start: 55px; */
+    padding: 8px 15px;
+    border-radius: 1.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+button{
+    width: auto;
+    padding: 10px;
+    background-color: #006A71;
+    border-width: 0;
+    border-color: 0;
+    border-style: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: thistle;
+}
+
+button a{
+    color: white;
+}
+
+button:hover a{
+    color:#006A71;
+}
+
+.Content{
+    padding: 20px;
+    justify-content: center;
+}
+.Content.blog h1{
+    color: thistle;
+}
+.monospaced {
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre;
+    text-align: center;
+    font-size: 15px;
+}
+
+.TopBottomLine{
+    margin-top: 0;
+    text-decoration: underline overline;
+    text-underline-position: under;
+    flex-direction: row;
+    margin-block-end: 0.2em;;
+
+}
+.Grid-cell{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.Main-content{
+    padding: 20px;
+    height: auto;
+    border: 1px solid #006A71;
+    flex: 3;
+    margin-right: 10px;
+}
+
+.Side-content{
+    border: 1px solid #233E8B;
+    flex: 1;
+    padding: 20px;
+    justify-content: space-between;
+}
+.weatherBoard{
+    margin-bottom: 25px;
+}
+.notes{
+    height: auto;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+}
+
+.notes li {
+    line-height: 18px;
+    justify-content: space-between;
+    background-color: thistle;
+    margin-bottom: 5px;
+    list-style-type: none;
+    padding: 10px;
+    width: 100%;
+}
+.notes li :hover{
+    color:white;
+}
+.notes li:hover a{
+    color:thistle;
+}
+
+.notes :hover{
+    background-color:  #006A71; 
+}
+
+
+footer{
+    font-size: 12px;
+    text-align: center;
+    margin-block-start: 10px;;
+    margin-block-end: 10px;;
+}
+
+h5{
+    color: thistle;
+}
+
+.back-btn{
+    color: thistle;
+}
+
+.column-Content{
+text-align: center;
+margin-bottom: 30px;
+display: block;
+}
+.column-Content h3{
+    margin-top: 30px;
+    }
+
+.column-Content li{
+    list-style-type: none;
+    display: inline-block;
+    background-color:thistle;
+    color: white;
+    padding: 5px;
+}
+.center-btn{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+}

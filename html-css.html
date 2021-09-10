@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/tech-blog.css" rel="techical blog stylesheet" type="text/css">
+    <title>Technical Blog</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <div class ="Grid-cell">
+      <a href ="index.html"><img class="logo" src="images/IconYing.svg" alt="logo" ></a>
+      <div class="header-content">
+        <h1>WEB DESIGN &amp; DEVELOPE JOURNAL</h1>
+        <p class ="TopBottomLine">  
+          By ying: Some stories &amp; Internet I come across while learning to code. 
+        </p>
+      </div>
+      <div style="flex: auto;"></div>
+    <div class="top-nav">
+        <button><a href ="template.html">Story</a></button>
+        <button><a href ="html-css.html">Technical Blog</a></button>
+        <button><a href ="identity-value.html">Value</a></button>
+    </div>
+  </div>
+
+  <div class="Content">
+  <div class="square-list">
+<!-- What is the difference between Margin, Border, and Padding? -->
+  <section id="square1" class="square">
+         .square
+          <p>{
+              min-width: 250px;<br>
+              width: 270px;<br>
+              height: 270px;<br>
+              padding: 20px;<br>
+              font-weight: bold;<br>}</p>
+          <br>
+          <p>.square::after{<br>
+              content: "";<br>
+              display: block;<br>
+              padding-bottom: 100%;<br>}</p>
+          <br>
+            <p>  #square1{<br>
+              background-color:  #F4DFD0;<br>}</p>
+        
+  </section>
+
+  <section id="square2" class="square">
+          Margin
+          <p>#square2{<br>
+              background-color: thistle;<br>
+              margin: 10px;<br>
+              width: 250px;<br>
+              height: 250px;<br>
+        }</p>
+        </section>
+
+        <section id="square3" class="square">
+          Border
+          <p>#square3{<br>
+            background-color: #7EB5A6;<br>
+            border-style: solid;<br>
+            border-width: 10px;<br>
+            border-color: #B5EAEA;<br>
+        }</p>
+        </section>
+
+        <section id="square4" class="square">
+          Padding
+          
+        <p>
+          #square4{<br>
+            background-color: #006A71;<br>
+            padding: 20px;<br>
+            color: thistle;<br>
+        }<br>
+        <br>
+        #square4 p{<br>
+            color: thistle;<br>
+        }
+        </p>
+        
+        </section>
+
+<!-- What are the best practices associated with using classes vs. ids? -->
+        <section id="square5" class="square">classes
+          <p>Classes can apply the same style a group of elements, you can add more than one class to the element. </p>
+          <p>Use <b>.(Dot)</b> to style class</p>
+          <br>
+          <p><b>square</b> is the class name on this page</p>
+        </section> 
+        <section id="square6" class="square">id
+          <p>ID apply on only one single element. <br>
+            Use <b>#</b> to style class</p>
+            <br>
+            <p><b>square1-15</b>Each square have a unique ID</p>
+        </section> 
+
+<!-- What are the differences between relative, absolute, and fixed positioning? -->
+        <section id="square7" class="square">relative
+          <p> #square7outside{
+            position: relative;}<br>
+            #square7inside{
+            position: relative;}
+         </p>
+          <div id="square7outside"></div>
+          <div id="square7inside"></div>
+        </section>
+
+        <section id="square8" class="square">absolute
+          <p>{position: absolute;<br>
+            background-color: #758086;<br>
+            width: 110px;<br>
+            height: 110px;}</p>
+          
+          <div id="square8outside"></div>
+          <div id="square8inside"></div>
+        </section>
+
+        <section id="square9" class="square">fixed position
+          <p>Always stays in the same place even if the page is scrolled, see <span class="highlight"><b>#fix-square</b></span>
+          <div id="fix-square">
+        #fix-square{<br>
+          <p>position: absolute;<br>
+          background-color: #B5EAEA;<br>
+          margin: 10px;<br>
+          width: 165px;<br>
+          height: 165px;<br>
+          padding: 10px;<br>
+      </p>}</div>
+          
+        </section>
+
+        <section id="square10" class="square sticky-element">.sticky{
+          <p>
+            position: sticky;<br>
+            bottom: 0;<br>
+            background-color: yellow;<br>
+            padding: 50px;<br>
+         </p> }<br><br>
+          <p>To see the effect of sticky check out yello banner</p>
+        </section>
+        <div id="square10outside"></div>
+        <div id="square10inside"></div>
+
+<!-- What does it mean to display inline vs inline blocks? -->
+        
+        <section id="square11" class="square">inline
+          <p>
+            There’s a bunch of property values. To displays the element on the same line for example here:  <b>p tag </b> in different section still show continuing block
+            <p>
+              <p class="inline-content">#square11</p>
+              <p class="inline-content">p{</p>
+                <p class="inline-content">display: inline;}</p>
+                <p class="inline-content">display: inline;}</p>
+          </p></p>
+        </section>
+        <section id="square12" class="square">inline blocks 
+          <p>Alright, let's move on to inline-block. It’s essentially the same thing as inline, except that you can set height and width values.
+            <div id="square12a"></div>
+            <div id="square12b"></div>
+            <div id="square12c"></div>
+          </p>
+        </section>
+
+        <section id="square13" class="square">circle
+          <p><b>#square13<br> p{</b><br>
+              position: absolute;<br>
+              top:50%;<br>
+              left: 50%;<br>
+              margin-right: -50%;<br>
+              transform: translate(-50%,-50%)<br>
+              <b>}</b></p></section>
+        <section id="square14" class="square"></section>
+        <section id="square15" class="square"></section>
+        <section id="square16" class="square"></section>
+        <section id="square17" class="square"></section>
+        <section id="square18" class="square"></section>
+</div>
+</div>
+</div>
+<div class="sticky">I will stick to the screen when you reach my scroll position
+  
+</div>
+</div></div>
+</body>
+
+</html>
