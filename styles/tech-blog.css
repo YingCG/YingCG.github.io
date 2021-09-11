@@ -67,13 +67,13 @@
     background-color: #E4D8DC;
 }
 #square7 p{
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 #square7outside{
     position: relative;
     background-color: thistle;
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
 }
 
 #square7inside{
@@ -81,6 +81,7 @@
     background-color: white;
     width: 55px;
     height: 55px;
+    margin-bottom: 3px;
 }
 #square8{
     background-color: #758086;
@@ -90,7 +91,7 @@
 
 #square8 p{
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 #square8outside{
     position: absolute;
@@ -193,3 +194,10 @@
     background-color: yellow;
     padding: 30px;
   }
+
+.triangle-right {
+	position: relative;
+    border-top: 60px solid transparent;
+	border-left: 100px solid white;
+	border-bottom: 60px solid transparent;
+}

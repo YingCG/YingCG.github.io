@@ -105,10 +105,11 @@
           <p> #square7outside{
             position: relative;}<br>
             #square7inside{
-            position: relative;}
+            position: relative;}<br>
          </p>
           <div id="square7outside"></div>
           <div id="square7inside"></div>
+          <p>(On top, navigation buttons are using relative)</p>
         </section>
 
         <section id="square8" class="square">absolute
@@ -125,7 +126,7 @@
           <p>Always stays in the same place even if the page is scrolled, see <span class="highlight"><b>#fix-square</b></span>
           <div id="fix-square">
         #fix-square{<br>
-          <p>position: absolute;<br>
+          <p>position: fixed;<br>
           background-color: #B5EAEA;<br>
           margin: 10px;<br>
           width: 165px;<br>
@@ -176,7 +177,16 @@
               transform: translate(-50%,-50%)<br>
               <b>}</b></p></section>
         <section id="square14" class="square"></section>
-        <section id="square15" class="square"></section>
+        <section id="square15" class="square">
+           <div class="triangle-right"></div>
+           <p>.triangle-right {<br>
+            position: relative;<br>
+            border-top: 60px solid transparent; <br>
+            border-left: 100px solid white;<br>
+            border-bottom: 60px solid transparent;<br>
+          }
+        </p>
+        </section>
         <section id="square16" class="square"></section>
         <section id="square17" class="square"></section>
         <section id="square18" class="square"></section>
