@@ -135,6 +135,7 @@ button:hover a{
     justify-content: space-between;
 }
 .weatherBoard{
+    margin-top: 15px;
     margin-bottom: 25px;
 }
 .notes{
@@ -214,4 +215,39 @@ display: block;
 .icon{
     width: 70px;
     height: 70px;
+}
+
+.huge{
+    font-size: 10rem;
+    color:red;
+}
+
+.codeExample{
+    background-color: lightgrey;
+}
+
+.invisible {
+    display: none;
+  }
+  
+.visible {
+    display: block;
+    border-radius: 0;
+}
+  
+.byoCorner{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    /* background-color: #7EB5A6; */
+    padding: 3px 10px;
+}
+
+.byoCorner h2{
+    margin-right: 5px;
+    color: thistle;
+    /* 
+    padding: 3px 15px;
+    border-radius: 10em;
+    align-items: center; */
 }

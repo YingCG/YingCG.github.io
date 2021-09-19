@@ -1,0 +1,71 @@
+
+.circle{
+    width: 300px;
+    height: 300px;
+    background-color:#B5EAEA;
+    border-radius: 50rem;
+    text-align: center;
+    color: white;
+}
+
+#text{
+    position: absolute;
+    top:50%;
+    transform: translate(50%, 50%)
+}
+
+
+#feeling {
+    background-color: #C9CCD5;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+#options{
+    background-color: #C9CCD5;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+#value{
+    background-color: #C9CCD5;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+#HTML-CSS-Square{
+ background-color: #B5EAEA;
+ width: 25%;
+ padding: 10px;
+}
+
+#Control-flow-Square{
+background-color: #C9CCD5;
+width: 25%;
+padding: 10px;
+}
+
+#DOM-Square{
+background-color: #B5EAEA;
+width: 25%;
+padding: 10px;
+}
+   
+#Arrays-Objects-Square{
+background-color: #C9CCD5;
+width: 25%;
+padding: 10px;
+}
+
+#Accessing-Square{
+    background-color: #B5EAEA;
+    width: 25%;
+    padding: 10px;
+    }
+
+#Functions-Square{
+    background-color: #C9CCD5;
+    width: 25%;
+    padding: 10px;
+}
