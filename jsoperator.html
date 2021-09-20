@@ -1,111 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link href="styles/tech-blog.css" rel="techical blog stylesheet" type="text/css">
-    <link href="styles/blog.css" rel="techical blog stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link
+      href="styles/tech-blog.css"
+      rel="techical blog stylesheet"
+      type="text/css"
+    />
+    <link
+      href="styles/blog.css"
+      rel="techical blog stylesheet"
+      type="text/css"
+    />
     <title>JavaScript Concepts</title>
-</head>
+  </head>
 
-<body>
-  <div class="page-container">
-    <div class ="Grid-cell">
-      <a href ="index.html"><img class="logo" src="images/IconYing.svg" alt="logo" ></a>
-      <div class="header-content">
-        <h1>WEB DESIGN &amp; DEVELOPE JOURNAL</h1>
-        <p class ="TopBottomLine">  
-          By ying: Some stories &amp; Internet I come across while learning to code. 
-        </p>
+  <body>
+    <div class="page-container">
+      <div class="Grid-cell">
+        <a href="index.html"
+          ><img class="logo" src="images/IconYing.svg" alt="logo"
+        /></a>
+        <div class="header-content">
+          <h1>WEB DESIGN &amp; DEVELOPE JOURNAL</h1>
+          <p class="TopBottomLine">
+            By ying: Some stories &amp; Internet I come across while learning to
+            code.
+          </p>
+        </div>
+        <div style="flex: auto"></div>
+        <div class="top-nav">
+          <button><a href="emotional-intelligence.html">Story</a></button>
+          <button><a href="technical-blog.html">Technical Blog</a></button>
+          <button><a href="identity-value.html">Value</a></button>
+        </div>
       </div>
-      <div style="flex: auto;"></div>
-    <div class="top-nav">
-        <button><a href ="emotional-intelligence.html">Story</a></button>
-        <button><a href ="technical-blog.html">Technical Blog</a></button>
-        <button><a href ="identity-value.html">Value</a></button>
-    </div>
-  </div>
 
-<div class="Content-question-answer">
-    <!-- An analogy to describe the differences between HTML and CSS -->
-    <div class="question" id="HTML-CSS-Square">JavaScript and its relationship to HTML and CSS</div>
-    <!-- <div class="invisible" id="HTML-CSS-answer"> -->
-      <div class="oneColum">
-
-        <h4>HTML</h4>
+      <div class="Content-question-answer">
+        <!-- An analogy to describe the differences between HTML and CSS -->
+        <div class="question" id="HTML-CSS-Square">
+          JavaScript and its relationship to HTML and CSS
+        </div>
+        <!-- <div class="invisible" id="HTML-CSS-answer"> -->
+        <div class="oneColum">
+          <h4>HTML</h4>
           To build the architecture of a website.
-        <h4>CSS </h4>
-          To apply styles of the space. We specify the layout according to the moodboard and concept we are achieving. 
-        <h4>JavaScript</h4>
-          Like connect to the electric and water supply, all this little behaviour to make beautiful space better experience while enjoy and stay.
-          JavaScript can access and change HTML elements,HTML attributes and CSS styles of a website. <br>
+          <h4>CSS</h4>
+          To apply styles of the space. We specify the layout according to the
+          moodboard and concept we are achieving.
+          <h4>JavaScript</h4>
+          Like connect to the electric and water supply, all this little
+          behaviour to make beautiful space better experience while enjoy and
+          stay. JavaScript can access and change HTML elements,HTML attributes
+          and CSS styles of a website. <br />
           <button>JavaScript Operators</button>
-        </div></div>
-        
-          <!-- <title><h2>JavaScript Concepts</h2></title> -->
-          
-<p class="" id="operators"></p>
+        </div>
+      </div>
 
+      <!-- <title><h2>JavaScript Concepts</h2></title> -->
 
-                
+      <p class="" id="operators"></p>
 
       <div class="answer">
-      
+        <h4>Arithmetic Operators</h4>
+        <ul>
+          <li class="InlineLayout">Addition +</li>
+          <li class="InlineLayout">Subtraction -</li>
+          <li class="InlineLayout">Multiplication *</li>
+          <li class="InlineLayout">Division /</li>
+          <li class="InlineLayout">Modulus %</li>
+          <li class="InlineLayout">Exponential Operator **</li>
 
-          <h4>Arithmetic Operators</h4>
-          <ul>
-          <li class="InlineLayout">  Addition +</li>
-          <li class="InlineLayout"> Subtraction - </li>
-          <li class="InlineLayout"> Multiplication * </li>
-          <li class="InlineLayout">  Division /</li>
-          <li class="InlineLayout"> Modulus %</li>
-          <li class="InlineLayout"> Exponential Operator **</li>
-
-          <li class="InlineLayout"> Increment ++ (same as +=1)</li>
-          <li class="InlineLayout">Decrement -- (same as -=1) </li>
+          <li class="InlineLayout">Increment ++ (same as +=1)</li>
+          <li class="InlineLayout">Decrement -- (same as -=1)</li>
         </ul>
-        <!-- <p>Plus plus or minus munis behave different infront</p> -->
-
-        </div>
-
-        <div class="answer">
-            <h4>Assignment Operators</h4>
-            <ul>
-            <li class="InlineLayout">Assignment =</li>
-            <li class="InlineLayout">Addition Assignment x = x + y</li>
-            <li class="InlineLayout">Subtraction Assignment</li>
-            <li class="InlineLayout">Multiplication Assignment</li>
-            <li class="InlineLayout">Division Assignment</li>
-            <li class="InlineLayout">Remainder Assignment</li>
-            <li class="InlineLayout">Exponential Assignment x **= 5</li></ul>
-            </div>
-
-          <div class="answer">
-          <h4>Comparison Operators</h4>
-          <ul>
-            <li class="InlineLayout">Equal == </li>
-            <li class="InlineLayout">Not Equal !=</li>
-            <li class="InlineLayout">Deeply Equal ===</li>
-            <li class="InlineLayout">Strict not equal !==</li>
-            <li class="InlineLayout">Greater than </li>
-            <li class="InlineLayout">Greater or equal</li>
-            <li class="InlineLayout">Less than</li>
-            <li class="InlineLayout">Less than or equal</li>
-          </ul>
-        </div>
-          <div class="answer">
-          <h4>Logical Operators</h4>
-          <ul>
-          <li class="InlineLayout">And &&</li>
-          <li class="InlineLayout">Or ||</li>
-          <li class="InlineLayout">Not !</li></ul>
-        </div>
       </div>
 
+      <div class="answer">
+        <h4>Assignment Operators</h4>
+        <ul>
+          <li class="InlineLayout">Assignment =</li>
+          <li class="InlineLayout">Addition Assignment x = x + y</li>
+          <li class="InlineLayout">Subtraction Assignment</li>
+          <li class="InlineLayout">Multiplication Assignment</li>
+          <li class="InlineLayout">Division Assignment</li>
+          <li class="InlineLayout">Remainder Assignment</li>
+          <li class="InlineLayout">Exponential Assignment x **= 5</li>
+        </ul>
+      </div>
 
+      <div class="answer">
+        <h4>Comparison Operators</h4>
+        <ul>
+          <li class="InlineLayout">Equal ==</li>
+          <li class="InlineLayout">Not Equal !=</li>
+          <li class="InlineLayout">Deeply Equal ===</li>
+          <li class="InlineLayout">Strict not equal !==</li>
+          <li class="InlineLayout">Greater than</li>
+          <li class="InlineLayout">Greater or equal</li>
+          <li class="InlineLayout">Less than</li>
+          <li class="InlineLayout">Less than or equal</li>
+        </ul>
+      </div>
+      <div class="answer">
+        <h4>Logical Operators</h4>
+        <ul>
+          <li class="InlineLayout">And &&</li>
+          <li class="InlineLayout">Or ||</li>
+          <li class="InlineLayout">Not !</li>
+        </ul>
+      </div>
+    </div>
 
-<script src="script/jsblog.js"></script>
-
-</body></html>
+    <script src="script/jsblog.js"></script>
+  </body>
+</html>

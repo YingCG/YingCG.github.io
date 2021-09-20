@@ -72,6 +72,9 @@
     padding-right: 20px;
     margin-top: 10px;
 }
+.split{
+    display: flex;
+}
 .answer{
     flex-direction: row;
     width: 50%;
@@ -87,14 +90,19 @@ h4{
     margin-block-start: 0.3em;
     margin-block-end: 0.3em;
 }
-.operators{
+#operators-Square{
     display: flex;
-    width: 100%;
-    background-color: #f4f0ec;
+    flex-wrap: wrap;
+}
+.operators{
+    width: 25%;
+}
 
-}   
+
 
 .code-Example{
        background-color: #f4f0ec;
        padding: 15px;
+       width: 100%;
+
    }

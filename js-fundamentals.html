@@ -21,32 +21,30 @@
         </p>
       </div>
       <div style="flex: auto;"></div>
-    <div class="top-nav">
-        <button><a href ="emotional-intelligence.html">Story</a></button>
-        <button><a href ="technical-blog.html">Technical Blog</a></button>
-        <button><a href ="identity-value.html">Value</a></button>
-    </div>
+      <div class="top-nav">
+          <button><a href ="emotional-intelligence.html">Story</a></button>
+          <button><a href ="technical-blog.html">Technical Blog</a></button>
+          <button><a href ="identity-value.html">Value</a></button>
+      </div>
   </div>
 
 <div class="Content-question-answer">
     <!-- An analogy to describe the differences between HTML and CSS -->
     <div class="question" id="HTML-CSS-Square">JavaScript and its relationship to HTML and CSS</div>
-    <!-- <div class="invisible" id="HTML-CSS-answer"> -->
-      <div class="oneColum">
+           <div class="oneColum">
+          <h4>HTML</h4>
+            To build the architecture of a website.
+          <h4>CSS </h4>
+            To apply styles of the space. We specify the layout according to the moodboard and concept we are achieving. 
+          <h4>JavaScript</h4>
+            Like connect to the electric and water supply, all this little behaviour to make beautiful space better experience while enjoy and stay.
+            JavaScript can access and change HTML elements,HTML attributes and CSS styles of a website. <br>
+        </div>
+    </div>
 
-        <h4>HTML</h4>
-          To build the architecture of a website.
-        <h4>CSS </h4>
-          To apply styles of the space. We specify the layout according to the moodboard and concept we are achieving. 
-        <h4>JavaScript</h4>
-          Like connect to the electric and water supply, all this little behaviour to make beautiful space better experience while enjoy and stay.
-          JavaScript can access and change HTML elements,HTML attributes and CSS styles of a website. <br>
-          <!-- <button>JavaScript Operators</button> -->
-        </div></div>
-        
-
+  
+    <!-- Control Flow & loop -->
     <div class="question" id="ControFlow-Square">Control Flow &amp; Loop</div>
-
       <div class ="answer-list">
         <div class="answer">
           <h4>Control Flow </h4>
@@ -60,22 +58,22 @@
         <div class="code-Example"> 
           <h4>If  |  else if  |  else</h4>
           <h5>Quite often have a var/ object on top to give the function working</h5>
-          var = myDate = newDate();<br>
-          var hrs = myDate.getHours();<br>
-          var greet;<br>
-          <br>
-          <h5>// if set the condition to return true</h5>
-          if (hrs &lt; 12){<br>
-            greet ="Good Morning";<br>
-            <h5>// code block to be executed if statement is true</h5>
-          }<br>
-          else if(hrs &gt;=12 &amp;&amp; hrs &lt; 17){<br>
-            greet ="Good Afternoon";<br>
-            <h5>// code block to be executed if statement is true</h5>
-          }<br>
-          else{
-            <h5>// code block to be executed if statement is true</h5>
-          }
+              var = myDate = newDate();<br>
+              var hrs = myDate.getHours();<br>
+              var greet;<br>
+              <br>
+              <h5>// if set the condition to return true</h5>
+              if (hrs &lt; 12){<br>
+               greet ="Good Morning";<br>
+               <h5>// code block to be executed if statement is true</h5>
+              }<br>
+              else if(hrs &gt;=12 &amp;&amp; hrs &lt; 17){<br>
+              greet ="Good Afternoon";<br>
+              <h5>// code block to be executed if statement is true</h5>
+              }<br>
+              else{
+              <h5>// code block to be executed if statement is true</h5>
+              }
         </div>
       </div>
 
@@ -100,44 +98,56 @@
               <h5>// code block to be executed</h5>
             }
           </div>
-          </div>
+          <p>Plus plus or minus munis behave different infront or behind</p>
+          
+          <div class="split">
+            <div class="code-Example"> 
+                x = 2; <br>
+                y = x++;<br>
+                {<h5>here y is 2, x is 3</h5>}
+            </div>
+            <div class="code-Example"> 
+              x = 2; <br>
+              y = ++x;<br>
+              {<h5>here y is 3, x is 2</h5>}
+              </div>
         </div>
+      </div>
+    </div>
+
 
     <!-- Describe what the DOM is and an example of how you might interact with it. -->
-    <div class="question" id="DOM-Square">The DOM</div>
-    <!-- <div class="invisible" id="DOM-answer">The DOM</div> -->
-    
-
+    <div class="question" id="DOM-Square">The DOM</div> 
         <div class ="answer-list">
           <div class="answer">
             <h4>Document Object Model </h4>
             <p> HTML DOM allows JavaScript to react to HTML event by defining the all elements in a website as objects. To access the objects, or its properties, we method.          
               <h4>Steps to manipulate DOM: </h4>
-              1. Using selector to choose the HTML object or properties.<br>
-              2. Add the event listener<br>
-              3. To assign an event handler<br>
-              4. We calling the event handler from where it need to happens.</p>
+                  1. Using selector to choose the HTML object or properties.<br>
+                  2. Add the event listener<br>
+                  3. To assign an event handler<br>
+                  4. We calling the event handler from where it need to happens.</p>
           
               <h4>Commom method we use as Selector:</h4>
               <ul>
-              <li class="InlineLayout">this</li>
-              <li class="InlineLayout">getElementByTagName</li>
-              <li class="InlineLayout">getElementByClassName</li>
-              <li class="InlineLayout">getElementById</li>
-              <li class="InlineLayout">querySelector</li>
-              <li class="InlineLayout">querySelectorAll</li>
-          </ul>
-        </div>
+                <li class="InlineLayout">this</li>
+                <li class="InlineLayout">getElementByTagName</li>
+                <li class="InlineLayout">getElementByClassName</li>
+                <li class="InlineLayout">getElementById</li>
+                <li class="InlineLayout">querySelector</li>
+                <li class="InlineLayout">querySelectorAll</li>
+              </ul>
+          </div>
         <div class="answer">
           <h4>Commom Event listerner:</h4>
           <ul>
             <li class="InlineLayout">'onload'</li>
-          <li class="InlineLayout">'click'</li>
-          <li class="InlineLayout">'onclick'</li>
-          <li class="InlineLayout">'mouseover'</li>
-          <li class="InlineLayout">'mouseout'</li>
-          <li class="InlineLayout">'toggel'</li>
-      </ul>
+            <li class="InlineLayout">'click'</li>
+            <li class="InlineLayout">'onclick'</li>
+            <li class="InlineLayout">'mouseover'</li>
+            <li class="InlineLayout">'mouseout'</li>
+            <li class="InlineLayout">'toggel'</li>
+          </ul>
           
           <h4>To change the selected object:</h4>
               <ul>
@@ -146,9 +156,8 @@
               <li class="InlineLayout">element.style.property</li>
               <li class="InlineLayout">element.setAttribute(attribute, value)</li>
           </ul>
-          </div>
+        </div>
 </div>
-
     <!-- Explain the difference between accessing data from arrays and objects. -->
     <div class="question" id="Arrays-Objects-Square">Objects and Arrays</div>
     <!-- <div class="invisible" id="Arrays-Objects-answer">Arrays and Objects</div> -->
@@ -179,47 +188,78 @@
             <div class="code-Example"> 
               var weekdays ={'Monday','Tuesday','Wednesday','Thursday','Friday' };
             </div>
-        </div>
-        
+        </div>  
 </div>
+
     <!-- <div class="invisible" id="Accessing-answer">Difference between accessing data from arrays and objects</div> -->
     <div class="question" id="Accessing-Square">Accessing data from arrays and objects</div>
-    <div class ="answer-list">
+      <div class ="answer-list">
       
-      <div class="twoColumn"><h4>To access Objects </h4>
-        Using dot. or bracket [ ]notation<br><br>
-        <div class="code-Example">
-          <h4>dot(.) </h4>
-          object.key <h5>// return value</h5><br>
+        <div class="twoColumn"><h4>To access Objects </h4>
+          Using dot. or bracket [ ]notation<br><br>
+          <div class="code-Example">
+            <h4>dot(.) </h4>
+            object.key <h5>// return value</h5><br>
 
-          <h4>bracket [ ] </h4>       
-          object['key'] <h5>// return value</h5>
+            <h4>bracket [ ] </h4>       
+            object['key'] <h5>// return value</h5>
+          </div>
+        </div>
+
+        <div class="twoColumn"><h4>To access Arrays</h4>
+          using bracket [ ] select index number start from 0<br><br>
+          <div class="code-Example">
+            <h4>bracket [ index number ] </h4>       
+            arrayList[0] 
+            <h5>// return first element in array</h5>
+          </div>
         </div>
       </div>
 
-      <div class="twoColumn"><h4>To access Arrays</h4>
-        using bracket [ ] select index number start from 0<br><br>
-        <div class="code-Example">
-          <h4>bracket [ index number ] </h4>       
-          arrayList[0] 
-          <h5>// return first element in array</h5>
-        </div>
-      </div>
-    </div>
+  <!-- Explain what functions are and why they are useful. -->
+  <div class="question" id="Functions-Square">Functions and why they are useful</div>
+    <div class ="answer-list">
 
-    <!-- Explain what functions are and why they are useful. -->
-    <div class="question" id="Functions-Square">Functions and why they are useful</div>
-    <!-- <div class="invisible" id="Functions-answer">Functions and why they are useful</div> -->
-    <div class ="answer">
-        <ul>
-        <li>To group code together</li>
-        <li>To reuse the block of code</li>
-        <li>Can take argument, and return value</li>
-        </ul>
+      <div class ="answer">
+        <p>Function group code together<br>
+        Function reuse the group of code<br>
+        Function can take argument, can return value<br>
+        There are function without argument, one argument and multiple argument<br>
+        </p>
+        <h4>function () can write as () =&gt;</h4>
+
+        <p>
+        A parameter is the variable listed inside the parentheses in the function definition.</p>
+        <p>
+        An argument is the value that is sent to the function when it is called.</p>
+
+        </div>
+        <div class ="answer">
+            <div class="code-Example">
+              <h5>// First way to write Function</h5>
+              function add(a, b){<br>
+                return a + b + 100;<br>
+              }
+            
+                <h5>// Second way to write Function</h5>
+                var add = function(a, b) {<br>
+                  return a + b;<br>
+                };
+                <h5>// Third way to write Arrow Function</h5>
+                (a, b) =&gt; a + b + 100;
+
+                <h5>// Function without arguments</h5>
+                let a = 4;<br>
+                let b = 2;<br>
+                () =&gt; a + b + 100;
+                <h5>
+                function (){<br>
+                  return a + b + 100;<br>
+                }</h5>
+              </div>
+        </div>
   </div>
+</div>
 
-
-
-<script src="script/jsblog.js"></script>
-
-</body></html>
+</body>
+</html>
