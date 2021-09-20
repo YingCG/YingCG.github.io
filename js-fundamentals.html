@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
     <link href="styles/tech-blog.css" rel="techical blog stylesheet" type="text/css">
-    <title>Technical Blog</title>
+    <link href="styles/blog.css" rel="techical blog stylesheet" type="text/css">
+    <title>JavaScript Concepts</title>
 </head>
 
 <body>
@@ -27,107 +28,198 @@
     </div>
   </div>
 
-  <div class="Content">
-    
+<div class="Content-question-answer">
     <!-- An analogy to describe the differences between HTML and CSS -->
-    <div id="HTML-CSS-Square">
-        <p>HTML build the architecture of a website.</p>
-        <p>CSS is to apply the style to the space. We specify the layout according to the moodboard and concept we are achieving. Moodboards can be literal and practical (featuring fonts, color schemes and images that you actually plan to use in</p>
-        <p>JavaScript is like connect to the electric and water supply, all this little behaviour to make beautiful space better experience while enjoy and stay.</p>
-    </div>
-    <!-- Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'. (But not those ones). -->
-    <div id="Control-flow-Square">
-    <h1> Control flow</h1>
-    <span>If</span><span>For Loops</span><span>Relational Operators</span>
-    </div>
-    <div id="If-Square">
-        <h2>IF</h2>
-        <span>Conditional statement</span><span>Execute statement</span><span>True or false</span>
-        <div class="Time">Time</div>
-    </div>
+    <div class="question" id="HTML-CSS-Square">JavaScript and its relationship to HTML and CSS</div>
+    <!-- <div class="invisible" id="HTML-CSS-answer"> -->
+      <div class="oneColum">
 
-    <div id="Operator-Square">
-        <h2>Operators</h2>
-        <ul>
-            Arithmetic Operators
-            <li>Modulus % (devide and get the remaining)</li>
-            <li>Increment (++ same as +=1)
-                <p>Plus plus or minus munis behave different infront</p>
-            </li>
-            <li>Decrement (-- same as -=1) </li>
+        <h4>HTML</h4>
+          To build the architecture of a website.
+        <h4>CSS </h4>
+          To apply styles of the space. We specify the layout according to the moodboard and concept we are achieving. 
+        <h4>JavaScript</h4>
+          Like connect to the electric and water supply, all this little behaviour to make beautiful space better experience while enjoy and stay.
+          JavaScript can access and change HTML elements,HTML attributes and CSS styles of a website. <br>
+          <!-- <button>JavaScript Operators</button> -->
+        </div></div>
+        
 
-            <li>Unary Negation or Unary Plus (just simple add a + or - to turn it into number)</li>
-            <li>Unary Plus</li>
-            <li>Exponential Operator **</li>
-    </ul>
-    <ul>
-        Assignment Operators
-        <li>Assignment =</li>
-        <li>Addition Assignment x = x + y</li>
-        <li>Subtraction Assignment</li>
-        <li>Multiplication Assignment</li>
-        <li>Division Assignment</li>
-        <li>Remainder Assignment</li>
-        <li>Exponential Assignment x **= 5</li>
-</ul>
-<ul>Comparison Operators
-    <li>Equal == </li>
-    <li>Not Equal !=</li>
-    <li>Deeply Equal ===</li>
-    <li>Strict not equal !==</li>
-    <li>Greater than </li>
-    <li>Greater or equal</li>
-    <li>Less than</li>
-    <li>Less than or equal</li>
-</ul>
-<ul>Logical Operators
-    <li>And &&</li>
-    <li>Or ||</li>
-    <li>Not !</li>
-</ul>
-</div>
+    <div class="question" id="ControFlow-Square">Control Flow &amp; Loop</div>
 
+      <div class ="answer-list">
+        <div class="answer">
+          <h4>Control Flow </h4>
+          <p>Use to execution code only under certain conditions. </p>
+          <ul>
+          <li class="InlineLayout">Conditional statement</li>
+          <li class="InlineLayout">Execute statement</li>
+          <li class="InlineLayout">True or false</li>
+        </ul>    
+        
+        <div class="code-Example"> 
+          <h4>If  |  else if  |  else</h4>
+          <h5>Quite often have a var/ object on top to give the function working</h5>
+          var = myDate = newDate();<br>
+          var hrs = myDate.getHours();<br>
+          var greet;<br>
+          <br>
+          <h5>// if set the condition to return true</h5>
+          if (hrs &lt; 12){<br>
+            greet ="Good Morning";<br>
+            <h5>// code block to be executed if statement is true</h5>
+          }<br>
+          else if(hrs &gt;=12 &amp;&amp; hrs &lt; 17){<br>
+            greet ="Good Afternoon";<br>
+            <h5>// code block to be executed if statement is true</h5>
+          }<br>
+          else{
+            <h5>// code block to be executed if statement is true</h5>
+          }
+        </div>
+      </div>
 
-<h2>For Loop</h2>
-<h2>Relational Operators</h2>
+        <div class="answer">
+          <h4>Loop</h4>
+          <p>Loop through a block of code a number of times while the condition is true</p>
+          <div class="code-Example"> 
+            <h4>for  |  while</h4>
+            for (let i = 0; i &lt; length; i++){
+              <h5>// code block to be executed</h5>
+            }<br><br>
+            let i = 0<br>
+            while (i &lt; length){
+              <h5>// code block to be executed</h5>
+              i++<br>
+            }
+          </div>
 
-
+          <div class="code-Example"> 
+            <h4>for...in  |  for...of  |  forEach</h4>
+            for (key in object){
+              <h5>// code block to be executed</h5>
+            }
+          </div>
+          </div>
+        </div>
 
     <!-- Describe what the DOM is and an example of how you might interact with it. -->
-    <div id="DOM-Square">
-        <h2>The DOM</h2>
-    <p>3 step to manipulate DOM</p>
-    <p>First step, using selector to choose the element. <br>
-        Commom Selector we use: <br>
-        <span>this</span>
-        <span>getElementByTagName</span>
-        <span>getElementByClassName</span>
-        <span>getElementById</span>
-        <span>querySelector</span>
-        <span>querySelectorAll</span>
-    </ul>
-    <p>Second step, we add the event listener<br>
-        <div class ="codeExample">document.getElementById("myBtn").onclick = displayDate;</div>
-    </p>
-</p>
-
-    <p> Thrid step, to assign an event handler. 
-
-    </p>
-
-    <p>Last, we calling the event handler from where it need to happens. </p>
-</div> 
-    <!-- Explain the difference between accessing data from arrays and objects. -->
-    <div id="Arrays-Objects-Square">
-        <h2>Accessing data from arrays and objects</h2>
-    <p></p>
-
-    <p></p>
+    <div class="question" id="DOM-Square">The DOM</div>
+    <!-- <div class="invisible" id="DOM-answer">The DOM</div> -->
     
+
+        <div class ="answer-list">
+          <div class="answer">
+            <h4>Document Object Model </h4>
+            <p> HTML DOM allows JavaScript to react to HTML event by defining the all elements in a website as objects. To access the objects, or its properties, we method.          
+              <h4>Steps to manipulate DOM: </h4>
+              1. Using selector to choose the HTML object or properties.<br>
+              2. Add the event listener<br>
+              3. To assign an event handler<br>
+              4. We calling the event handler from where it need to happens.</p>
+          
+              <h4>Commom method we use as Selector:</h4>
+              <ul>
+              <li class="InlineLayout">this</li>
+              <li class="InlineLayout">getElementByTagName</li>
+              <li class="InlineLayout">getElementByClassName</li>
+              <li class="InlineLayout">getElementById</li>
+              <li class="InlineLayout">querySelector</li>
+              <li class="InlineLayout">querySelectorAll</li>
+          </ul>
+        </div>
+        <div class="answer">
+          <h4>Commom Event listerner:</h4>
+          <ul>
+            <li class="InlineLayout">'onload'</li>
+          <li class="InlineLayout">'click'</li>
+          <li class="InlineLayout">'onclick'</li>
+          <li class="InlineLayout">'mouseover'</li>
+          <li class="InlineLayout">'mouseout'</li>
+          <li class="InlineLayout">'toggel'</li>
+      </ul>
+          
+          <h4>To change the selected object:</h4>
+              <ul>
+              <li class="InlineLayout">element.innerHTML</li>
+              <li class="InlineLayout">element.attribute</li>
+              <li class="InlineLayout">element.style.property</li>
+              <li class="InlineLayout">element.setAttribute(attribute, value)</li>
+          </ul>
+          </div>
+</div>
+
+    <!-- Explain the difference between accessing data from arrays and objects. -->
+    <div class="question" id="Arrays-Objects-Square">Objects and Arrays</div>
+    <!-- <div class="invisible" id="Arrays-Objects-answer">Arrays and Objects</div> -->
+    <div class ="answer-list">
+        <div class="twoColumn">
+          <h4>Objects </h4>
+          A list of properties consist key and value
+            <li class="InlineLayout">var</li>
+            <li class="InlineLayout">const</li>
+            <li class="InlineLayout">let</li>
+ 
+            <p class="code-Example"> 
+              var person ={<br>
+                key: value,<br>
+                name: JavaScript,<br>
+                level: 1<br>
+              };
+            </p>
+  </div>
+        <div class="twoColumn"><h4>Arrays</h4>
+          Store a list of items or objects in a single variable, useful when creating orderded colletions. Item can be added and removed from beginning or end of an array using:
+          <ul>
+            <li class="InlineLayout">push()</li>
+            <li class="InlineLayout">pop()</li>
+            <li class="InlineLayout">unshift()</li>
+            <li class="InlineLayout">shift()</li>
+            </ul>
+            <div class="code-Example"> 
+              var weekdays ={'Monday','Tuesday','Wednesday','Thursday','Friday' };
+            </div>
+        </div>
+        
+</div>
+    <!-- <div class="invisible" id="Accessing-answer">Difference between accessing data from arrays and objects</div> -->
+    <div class="question" id="Accessing-Square">Accessing data from arrays and objects</div>
+    <div class ="answer-list">
+      
+      <div class="twoColumn"><h4>To access Objects </h4>
+        Using dot. or bracket [ ]notation<br><br>
+        <div class="code-Example">
+          <h4>dot(.) </h4>
+          object.key <h5>// return value</h5><br>
+
+          <h4>bracket [ ] </h4>       
+          object['key'] <h5>// return value</h5>
+        </div>
+      </div>
+
+      <div class="twoColumn"><h4>To access Arrays</h4>
+        using bracket [ ] select index number start from 0<br><br>
+        <div class="code-Example">
+          <h4>bracket [ index number ] </h4>       
+          arrayList[0] 
+          <h5>// return first element in array</h5>
+        </div>
+      </div>
+    </div>
+
     <!-- Explain what functions are and why they are useful. -->
-    <div id="Functions-Square">
-        <h2>Functions</h2>
-    <p>1. To group code together 2. To reuse the block of code. Can take argument, and return value</p>
-</div></div></div></div>
-</body>
-</html>
+    <div class="question" id="Functions-Square">Functions and why they are useful</div>
+    <!-- <div class="invisible" id="Functions-answer">Functions and why they are useful</div> -->
+    <div class ="answer">
+        <ul>
+        <li>To group code together</li>
+        <li>To reuse the block of code</li>
+        <li>Can take argument, and return value</li>
+        </ul>
+  </div>
+
+
+
+<script src="script/jsblog.js"></script>
+
+</body></html>

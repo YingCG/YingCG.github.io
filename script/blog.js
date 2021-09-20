@@ -13,6 +13,10 @@ function start() {
   //Binding value
   var value = document.getElementById('value')
   value.addEventListener('click',handleVisibilityClick)
+
+  //Binding operation
+  var operators = document.getElementById('operators')
+  operators.addEventListener('click',handleVisibilityClick)
 }
 
 

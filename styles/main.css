@@ -76,6 +76,7 @@ button{
     border-style: none;
     cursor: pointer;
     font-size: 15px;
+    color: white;
 }
 
 button:hover{
@@ -234,7 +235,7 @@ display: block;
     display: block;
     border-radius: 0;
 }
-  
+ 
 .byoCorner{
     display: flex;
     align-items: center;
