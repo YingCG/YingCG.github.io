@@ -58,7 +58,7 @@
         <div class="code-Example"> 
           <h4>If  |  else if  |  else</h4>
           <h5>Quite often have a var/ object on top to give the function working</h5>
-              var = myDate = newDate();<br>
+              var = newDate();<br>
               var hrs = myDate.getHours();<br>
               var greet;<br>
               <br>
@@ -66,11 +66,11 @@
               if (hrs &lt; 12){<br>
                greet ="Good Morning";<br>
                <h5>// code block to be executed if statement is true</h5>
-              }<br>
+              }<br><br>
               else if(hrs &gt;=12 &amp;&amp; hrs &lt; 17){<br>
               greet ="Good Afternoon";<br>
               <h5>// code block to be executed if statement is true</h5>
-              }<br>
+              }<br><br>
               else{
               <h5>// code block to be executed if statement is true</h5>
               }
@@ -83,8 +83,8 @@
             <div class="split">
               <div class="code-Example"> 
                 <h4>for</h4>
-                for(&#10122;let i=0; &#10123;i&lt;&#10124;length; i++)<br>
-                { &#10125;
+                for(&#10122;let i=0; &#10123;i &lt; length; &#10124;i++)<br>
+                { &#10125; return
                   <h5>//  code block to be executed</h5>
                 }
               </div>
@@ -94,7 +94,7 @@
                 <h4>while</h4>
                 &#10122; let i=0<br>
               while (&#10123;i &lt; length)<br>
-              { &#10125;
+              { &#10125; return
                 <h5>//  code block to be executed</h5>
                 &#10124;i++<br>
               }
@@ -104,6 +104,7 @@
             </div> 
             <div class="split">
               <div class="code-Example"> 
+                <br>
                 <h4>for...in  |  for...of  |  forEach</h4>
                 const array=['a', 'b', 'c'];<br>
                 for (key in object){
@@ -275,9 +276,7 @@
                 let b = 2;<br>
                 () =&gt; a + b + 100;
                 <h5>
-                function (){<br>
-                  return a + b + 100;<br>
-                }</h5>
+                function (){return a + b + 100;}</h5>
               </div>
         </div>
   </div>

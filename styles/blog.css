@@ -74,6 +74,7 @@
 }
 .split{
     display: flex;
+    padding-bottom: 5px;
 }
 .answer{
     flex-direction: row;
@@ -104,5 +105,6 @@ h4{
        background-color: #f4f0ec;
        padding: 15px;
        width: 100%;
-
+       padding-bottom: 8px;
+       padding-top: 8px;
    }
