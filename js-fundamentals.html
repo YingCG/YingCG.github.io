@@ -80,41 +80,63 @@
         <div class="answer">
           <h4>Loop</h4>
           <p>Loop through a block of code a number of times while the condition is true</p>
-          <div class="code-Example"> 
-            <h4>for  |  while</h4>
-            for (let i = 0; i &lt; length; i++){
-              <h5>// code block to be executed</h5>
-            }<br><br>
-            let i = 0<br>
-            while (i &lt; length){
-              <h5>// code block to be executed</h5>
-              i++<br>
-            }
-          </div>
+            <div class="split">
+              <div class="code-Example"> 
+                <h4>for</h4>
+                for(&#10122;let i=0; &#10123;i&lt;&#10124;length; i++)<br>
+                { &#10125;
+                  <h5>//  code block to be executed</h5>
+                }
+              </div>
 
-          <div class="code-Example"> 
-            <h4>for...in  |  for...of  |  forEach</h4>
-            for (key in object){
-              <h5>// code block to be executed</h5>
-            }
-          </div>
+            
+              <div class="code-Example"> 
+                <h4>while</h4>
+                &#10122; let i=0<br>
+              while (&#10123;i &lt; length)<br>
+              { &#10125;
+                <h5>//  code block to be executed</h5>
+                &#10124;i++<br>
+              }
+              </div>
+
+            
+            </div> 
+            <div class="split">
+              <div class="code-Example"> 
+                <h4>for...in  |  for...of  |  forEach</h4>
+                const array=['a', 'b', 'c'];<br>
+                for (key in object){
+                  <h5>// code block to be executed</h5>
+                }
+              </div>
+              <div class="code-Example"> 
+                <p>ForEach goes by value and calls a callback function <br>
+                  For of goes by value<br><br>
+                  For in goes by index<br>
+                  when used on objects, for in goes by properties</p>
+              </div>
+            </div>
+
           <p>Plus plus or minus munis behave different infront or behind</p>
-          
+
           <div class="split">
             <div class="code-Example"> 
                 x = 2; <br>
                 y = x++;<br>
                 {<h5>here y is 2, x is 3</h5>}
             </div>
+
             <div class="code-Example"> 
               x = 2; <br>
               y = ++x;<br>
               {<h5>here y is 3, x is 2</h5>}
               </div>
+            </div>
+
         </div>
       </div>
     </div>
-
 
     <!-- Describe what the DOM is and an example of how you might interact with it. -->
     <div class="question" id="DOM-Square">The DOM</div> 
