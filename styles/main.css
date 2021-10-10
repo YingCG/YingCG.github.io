@@ -239,6 +239,7 @@ display: block;
 .byoCorner{
     display: flex;
     align-items: center;
+    margin-right: 5px;
     margin-bottom: 15px;
     /* background-color: #7EB5A6; */
     padding: 3px 10px;
@@ -246,9 +247,13 @@ display: block;
 
 .byoCorner h2{
     margin-right: 5px;
+}
+
+.identity-value h2{
+    margin-right: 5px;
     color: rgb(190, 118, 190);
-    /* 
-    padding: 3px 15px;
-    border-radius: 10em;
-    align-items: center; */
+}
+
+.icon{
+    margin-right: 10px;
 }
