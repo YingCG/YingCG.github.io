@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .square{
@@ -14,11 +13,11 @@
     font-weight: bold;
 }
 
-.square::after{
+/* .square::after{
     content: "";
     display: block;
     padding-bottom: 100%;
-}
+} */
 
 .square p{
     text-align: left;
@@ -200,4 +199,56 @@
     border-top: 60px solid transparent;
 	border-left: 100px solid white;
 	border-bottom: 60px solid transparent;
+}
+
+#square16{
+    /* background-color: #faffea; */
+    width: 33%;
+    height: auto;
+}
+
+#square17{
+    /* background-color: #e6ddde; */
+    width: 33%;
+    height: auto;
+}
+
+#square18{
+    width: 33%;
+    height: auto;
+}
+
+#square19{
+    width: 33%;
+    height: auto;
+}
+
+#square20{
+    width: 33%;
+    height: auto;
+}
+
+#square21{
+    width: 33%;
+    height: auto;
+}
+
+#square22{
+    width: 33%;
+    height: auto;
+}
+
+#square23{
+    width: 33%;
+    height: auto;
+}
+
+#square24{
+    width: 33%;
+    height: auto;
+}
+
+#square25{
+    width: 33%;
+    height: auto;
 }

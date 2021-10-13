@@ -216,6 +216,7 @@ display: block;
 .icon{
     width: 70px;
     height: 70px;
+    text-align: center;
 }
 
 .huge{
@@ -256,4 +257,5 @@ display: block;
 
 .icon{
     margin-right: 10px;
+    text-align: center;
 }
