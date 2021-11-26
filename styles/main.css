@@ -3,6 +3,9 @@
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
 }
+* {
+    box-sizing: border-box;
+  }
 
 body{
     position: relative;
@@ -100,12 +103,6 @@ button:hover a{
 .Content.blog h1{
     color: thistle;
 }
-.monospaced {
-    font-family: "Courier New", Courier, monospace;
-    white-space: pre;
-    text-align: center;
-    font-size: 15px;
-}
 
 .TopBottomLine{
     margin-top: 0;
@@ -115,67 +112,12 @@ button:hover a{
     margin-block-end: 0.2em;;
 
 }
-.Grid-cell{
-    display: flex;
-    text-align: left;
-    flex-wrap: wrap;
-}
-
-.Main-content{
-    padding: 20px;
-    height: auto;
-    border: 1px solid #006A71;
-    flex: 3;
-    margin-right: 10px;
-}
-
-.Side-content{
-    border: 1px solid #006A71;
-    flex: 1;
-    padding: 20px;
-    justify-content: space-between;
-}
-.weatherBoard{
-    margin-top: 15px;
-    margin-bottom: 25px;
-}
-.notes{
-    height: auto;
-    flex-direction: row;
-    width: 100%;
-    cursor: pointer;
-}
-
-.notes li {
-    line-height: 18px;
-    justify-content: space-between;
-    background-color: thistle;
-    margin-bottom: 3px;
-    list-style-type: none;
-    padding: 10px;
-    width: 100%;
-}
-
-.notes li a{
-    color: #006A71;
-}
-.notes li :hover{
-    color:white;
-}
-.notes li:hover a{
-    color:thistle;
-}
-
-.notes :hover{
-    background-color:  #006A71; 
-}
-
 
 footer{
     font-size: 12px;
     text-align: center;
-    margin-block-start: 10px;;
-    margin-block-end: 10px;;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
 }
 
 h5{
@@ -259,3 +201,270 @@ display: block;
     margin-right: 10px;
     text-align: center;
 }
+.notes{
+    height: auto;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+}
+.notes ul{
+padding-inline-start: 0;
+}
+.notes .h3:hover{
+    color: transparent;
+ }
+ 
+ .notes li {
+     line-height: 18px;
+     justify-content: space-between;
+     background-color: thistle;
+     margin-bottom: 3px;
+     list-style-type: none;
+     padding: 10px;
+     width: 100%;
+ }
+ 
+ .notes li a{
+     color: #006A71;
+ }
+ .notes li :hover{
+     color:white;
+ }
+ .notes li:hover a{
+     color:thistle;
+ }
+ 
+ .notes :hover{
+     background-color:  #006A71; 
+ }
+
+@media only screen and (max-width: 580px){
+    .monospaced {
+        display: none;
+    }
+
+    .monospaced:after{
+        content: " ";
+    }
+    .hello {
+        white-space: pre;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .Grid-cell{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    .Main-content{
+        padding: 10px;
+        height: auto;
+        border: 1px solid #006A71;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Side-content{
+        border: none;
+        padding: 10px;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .weatherBoard{
+    display: none;
+    }
+
+    .btn-inline{
+        font-size: 12px;
+    }
+
+    .top-nav button{
+        width: 32%;
+        margin-bottom: 5px;
+        padding: 5px 5px;
+        border-radius: 15px;
+    }
+
+    .notes{
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 581px) and (max-width: 768px){
+
+    .Grid-cell{
+        display: block;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    .monospaced {
+        display: none;
+    }
+
+    .monospaced:after{
+        content: " ";
+    }
+    .hello {
+        white-space: pre;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .Main-content{
+        padding: 20px;
+        height: auto;
+        border: 1px solid #006A71;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Side-content{
+        border: none;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+    }
+    
+    .weatherBoard{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        margin-right: 10px;
+        width: fit-content;
+    }
+    
+    .notes ul{
+        height: auto;
+        cursor: pointer;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .monospaced {
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre;
+    text-align: center;
+    font-size: 15px;
+    }  
+    .hello {
+        display: none;
+    }
+
+    .Grid-cell{
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+    
+    .Main-content{
+        padding: 20px;
+        height: auto;
+        border: 1px solid #006A71;
+        flex: 3;
+        margin-right: 10px;
+    }
+
+    .Side-content{
+        border: 1px solid #006A71;
+        flex: 1;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: space-between;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    .weatherBoard{
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .notes{
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #widget-iframe{
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .monospaced {
+      font-family: "Courier New", Courier, monospace;
+      white-space: pre;
+      text-align: center;
+      font-size: 15px;
+      }  
+      .hello {
+          display: none;
+      }
+  
+      .Grid-cell{
+          display: flex;
+          text-align: left;
+          flex-wrap: wrap;
+      }
+      
+      .Main-content{
+          padding: 20px;
+          height: auto;
+          border: 1px solid #006A71;
+          flex: 3;
+          margin-right: 10px;
+      }
+  
+      .Side-content{
+          border: 1px solid #006A71;
+          flex: 1;
+          padding: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+          justify-content: space-between;
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+      }
+  
+      .weatherBoard{
+          display: block;
+          margin-top: 15px;
+          margin-bottom: 25px;
+      }
+  
+      .notes{
+          height: auto;
+          flex-direction: row;
+          width: 100%;
+          cursor: pointer;
+      }
+  
+      #widget-iframe{
+          width: fit-content;
+      }
+  }
+
+
