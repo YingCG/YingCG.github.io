@@ -388,9 +388,7 @@ padding-inline-start: 0;
       }
   
       .Side-content{
-          -webkit-column-count: 1;
-          -moz-column-count: 1;
-          column-count: 1;
+          column-count: none;
           border: 1px solid #006A71;
           padding: 20px;
           margin-left: 10px;
