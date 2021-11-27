@@ -299,7 +299,7 @@ padding-inline-start: 0;
     }
 }
 
-@media only screen and (min-width: 581px){
+@media only screen and (min-width: 581px) and (max-width: 767px){
 
     .Grid-cell{
         display: block;
@@ -336,7 +336,7 @@ padding-inline-start: 0;
         margin-right: 10px;
         justify-content: space-between;
         width: 100%;
-        display: flex;
+        /* display: flex; */
     }
     
     .weatherBoard{
@@ -357,7 +357,7 @@ padding-inline-start: 0;
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px){
     .monospaced {
       font-family: "Courier New", Courier, monospace;
       white-space: pre;
@@ -376,8 +376,73 @@ padding-inline-start: 0;
       .Grid-cell{
           display: flex;
           text-align: left;
-          flex-wrap: wrap;
+          flex-wrap: nowrap;
       }
+
+      .Main-content{
+        padding: 20px;
+        height: auto;
+        border: 1px solid #006A71;
+        margin-left: 10px;
+        margin-right: 5px;
+        flex: 3;
+    }
+
+    .Side-content{
+        border: none;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: space-between;
+        width: 100%;
+        flex: 1;
+    }
+    
+    .weatherBoard{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        margin-right: 10px;
+        width: fit-content;
+    }
+      .notes{
+          height: auto;
+          flex-direction: row;
+          width: 100%;
+          cursor: pointer;
+      }
+
+      .notes ul{
+        height: auto;
+        cursor: pointer;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+      .Grid-cell{
+          display: flex;
+          text-align: left;
+          flex-wrap: nowrap;
+      }
+
+    .monospaced {
+      font-family: "Courier New", Courier, monospace;
+      white-space: pre;
+      text-align: center;
+      font-size: 15px;
+      } 
+
+      .monospaced:after{
+        content: " ";
+    }
+    
+      .hello {
+          display: none;
+      }
+  
       
       .Main-content{
           padding: 20px;
@@ -409,6 +474,15 @@ padding-inline-start: 0;
           width: 100%;
           cursor: pointer;
       }
+
+      .notes ul{
+        height: auto;
+        cursor: pointer;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
   }
+
 
 
