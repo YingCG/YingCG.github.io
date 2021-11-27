@@ -385,21 +385,18 @@ padding-inline-start: 0;
           border: 1px solid #006A71;
           flex: 3;
           margin-right: 10px;
-          -webkit-column-count: 9;
-          -moz-column-count: 9;
-          column-count: 9;
       }
   
       .Side-content{
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
           border: 1px solid #006A71;
-          flex: 1;
           padding: 20px;
           margin-left: 10px;
           margin-right: 10px;
           justify-content: flex-end;
-          -webkit-column-count: 3;
-          -moz-column-count: 3;
-          column-count: 3;
+          flex: 1;
       }
   
       .weatherBoard{
