@@ -234,7 +234,7 @@ padding-inline-start: 0;
      color:thistle;
  }
  
- .notes :hover{
+ .notes li a:hover{
      background-color:  #006A71; 
  }
 
@@ -357,69 +357,18 @@ padding-inline-start: 0;
 
 }
 
-@media only screen and (min-width: 769px) {
-    .Grid-cell{
-        display: block;
-        text-align: left;
-        flex-wrap: wrap;
-    }
-
-    .monospaced {
-        display: none;
-    }
-
-    .monospaced:after{
-        content: " ";
-    }
-    .hello {
-        white-space: pre;
-        font-family: "Courier New", Courier, monospace;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .Main-content{
-        padding: 20px;
-        height: auto;
-        border: 1px solid #006A71;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .Side-content{
-        border: none;
-        padding: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        justify-content: space-between;
-        width: 100%;
-        display: flex;
-    }
-    
-    .weatherBoard{
-        width: 100%;
-        margin-top: 15px;
-        margin-bottom: 25px;
-        margin-right: 10px;
-        width: fit-content;
-    }
-    
-    .notes ul{
-        height: auto;
-        cursor: pointer;
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
-}
-
 @media only screen and (min-width: 1024px) {
     .monospaced {
       font-family: "Courier New", Courier, monospace;
       white-space: pre;
       text-align: center;
       font-size: 15px;
-      }  
+      } 
+
+      .monospaced:after{
+        content: " ";
+    }
+    
       .hello {
           display: none;
       }
@@ -444,7 +393,7 @@ padding-inline-start: 0;
           padding: 20px;
           margin-left: 10px;
           margin-right: 10px;
-          justify-content: space-between;
+          justify-content: flex-end;
           -webkit-column-count: 1;
           -moz-column-count: 1;
           column-count: 1;
@@ -461,10 +410,6 @@ padding-inline-start: 0;
           flex-direction: row;
           width: 100%;
           cursor: pointer;
-      }
-  
-      #widget-iframe{
-          width: fit-content;
       }
   }
 
