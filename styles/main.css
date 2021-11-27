@@ -305,6 +305,7 @@ padding-inline-start: 0;
         display: block;
         text-align: left;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .monospaced {
@@ -336,7 +337,7 @@ padding-inline-start: 0;
         margin-right: 10px;
         justify-content: space-between;
         width: 100%;
-        /* display: flex; */
+        display: flex;
     }
     
     .weatherBoard{
@@ -345,6 +346,7 @@ padding-inline-start: 0;
         margin-bottom: 25px;
         margin-right: 10px;
         width: fit-content;
+        scale: 50%;
     }
     
     .notes ul{
@@ -385,7 +387,7 @@ padding-inline-start: 0;
         border: 1px solid #006A71;
         margin-left: 10px;
         margin-right: 5px;
-        flex: 3;
+        /* flex: 3; */
     }
 
     .Side-content{
@@ -395,7 +397,7 @@ padding-inline-start: 0;
         margin-right: 10px;
         justify-content: space-between;
         width: 100%;
-        flex: 1;
+        flex-grow: 1;
     }
     
     .weatherBoard{
@@ -403,13 +405,14 @@ padding-inline-start: 0;
         margin-top: 15px;
         margin-bottom: 25px;
         margin-right: 10px;
-        width: fit-content;
+        flex: 0 1 1000px;
     }
       .notes{
           height: auto;
           flex-direction: row;
           width: 100%;
           cursor: pointer;
+          flex: 0 1 1000px;
       }
 
       .notes ul{
