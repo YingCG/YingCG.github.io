@@ -387,7 +387,7 @@ padding-inline-start: 0;
         border: 1px solid #006A71;
         margin-left: 10px;
         margin-right: 5px;
-        flex-wrap: nowrap;
+        flex: auto 1 1;
     }
 
     .Side-content{
@@ -415,7 +415,7 @@ padding-inline-start: 0;
           flex-direction: row;
           width: 100%;
           cursor: pointer;
-          flex: 1 1;
+          flex: 1 1 1000px;
       }
 
 
@@ -467,10 +467,10 @@ padding-inline-start: 0;
           margin-left: 10px;
           margin-right: 10px;
           justify-content: flex-end;
-          flex: 1;
+          flex: 3 1 1000px;
       }
   
-      .weatherBoard{
+      .weatherBoard{ 
           display: block;
           margin-top: 15px;
           margin-bottom: 25px;
@@ -491,6 +491,71 @@ padding-inline-start: 0;
         column-count: 1;
     }
   }
+
+
+  @media only screen and (min-width: 1200px) {
+    .Grid-cell{
+        display: flex;
+        text-align: left;
+        flex-wrap: nowrap;
+    }
+
+  .monospaced {
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre;
+    text-align: center;
+    font-size: 15px;
+    } 
+
+    .monospaced:after{
+      content: " ";
+  }
+  
+    .hello {
+        display: none;
+    }
+
+    
+    .Main-content{
+        padding: 20px;
+        height: auto;
+        border: 1px solid #006A71;
+        flex: 3;
+        margin-right: 10px;
+    }
+
+    .Side-content{
+        column-count: none;
+        border: 1px solid #006A71;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: flex-end;
+        flex: 3 1 1000px;
+    }
+
+    .weatherBoard{ 
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .notes{
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .notes ul{
+      height: auto;
+      cursor: pointer;
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+  }
+}
+
 
 
 
