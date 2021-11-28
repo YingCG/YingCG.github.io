@@ -467,13 +467,14 @@ padding-inline-start: 0;
           margin-left: 10px;
           margin-right: 10px;
           justify-content: flex-end;
-          flex: 3 1 1000px;
       }
   
       .weatherBoard{ 
           display: block;
           margin-top: 15px;
           margin-bottom: 25px;
+          flex: 3 1 1000px;
+
       }
   
       .notes{
@@ -481,6 +482,8 @@ padding-inline-start: 0;
           flex-direction: row;
           width: 100%;
           cursor: pointer;
+          flex: 3 1 1000px;
+
       }
 
       .notes ul{
