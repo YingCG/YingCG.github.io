@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../ying.ico" />
+    <link href="../styles/hello.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="../styles/canvas-styles.css" />
+    <title>Creative Coding</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="flex-container">
+        <img class="logo" src="../assets/journeyYing.svg" alt="logo" />
+        <div class="top-nav">
+          <a class="back-btn" href="../Pages/creative-code.html">
+            &#8592; Back</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <h1>Generative Art</h1>
+      <button id="generate">Click to generate new drawings</button>
+      <div class="grid-layout">
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <canvas id="canvas4"></canvas>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="../Drawings/Generative_Singlelines_Drawing.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../Drawings/Generative_ContinueLines_Drawing.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../Drawings/GenerativeLines_DrawingLines_Animate.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../Drawings/GenerativeLines_DrawingLines_RainAnimation.js"
+    ></script>
+    <script type="text/javascript" src="../Drawings/clear-canvas.js"></script>
+
+    <!-- <script type="text/javascript" src="./scope_example.js"></script> -->
+  </body>
+</html>

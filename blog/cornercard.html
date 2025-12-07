@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corner Card</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      .cornered {
+        color: white;
+        background: linear-gradient(45deg, #121b5a, #2f469c, #009d9c);
+        background-size: 400% 400%;
+        height: 500px;
+        width: 500px;
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+        animation: gradient 5s ease infinite;
+        transition: width 2s, height 2s;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      h2 {
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+      }
+      .course-title {
+        font-family: "Montserrat", sans-serif;
+        padding: 1rem;
+      }
+      .cornered:hover {
+        width: 800px;
+        height: 800px;
+      }
+      .cornered:hover .course-title {
+        display: none;
+      }
+
+      .cornered:focus {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .course-content {
+        font-family: "Montserrat", sans-serif;
+        padding: 1rem;
+        visibility: hidden;
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 90% 100%, 0 100%);
+      }
+      .cornered:hover .course-content {
+        background: #121b5a;
+        visibility: visible;
+      }
+
+      @keyframes zoom-effect {
+        from {
+          background-color: transparent;
+        }
+        to {
+          background-color: #121b5a;
+          transform: scale(3);
+          opacity: 0;
+        }
+      }
+      .course-content a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .course-content a:hover {
+        color: #009d9c;
+      }
+    </style>
+    <div class="cornered">
+      <div class="course-title">
+        <h2>Harmoni Creators</h2>
+        <p>
+          Creators have the highest level of access to all the available tools
+          and capabilities of Harmoni.
+        </p>
+      </div>
+      <div class="course-content">
+        <h2>Harmoni Creators</h2>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+        <li><a href="#">Subject Title</a></li>
+      </div>
+    </div>
+  </body>
+</html>

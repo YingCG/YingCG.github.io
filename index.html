@@ -1,130 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Ying Web Desgin & Developing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link href="images/favicon.ico" rel="icon"> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./ying.ico" />
+
+    <link rel="stylesheet" type="text/css" href="./styles/canvas-styles.css" />
+    <link rel="stylesheet" href="./styles/gallery.css" />
+    <title>Curious Earthworm</title>
   </head>
   <body>
-    <div class="page-container">
-      <div class ="Grid-cell">
-        <!-- <div class="header"> -->
-        <a href ="index.html"><img class="logo" src="images/IconYing.svg" alt="logo" ></a>
-        
-        <div class="header-content">
-            <h1>WEB DESIGN &amp; DEVELOPE JOURNAL</h1>
-            <p class ="TopBottomLine">  
-              By ying: Some stories &amp; Internet I come across while learning to code. 
-            </p>
+    <div class="main-container">
+        <div class="flex-container">
+
+            <div class="column-container">
+                <div class="flex-title">
+
+                <a href="index.html"><img class="logo" src="./assets/journeyYing.svg" alt="logo"/></a>
+      <h2 class="title">A Place For Creativity and Curiosity</h2>
+                </div>
+
+
+                  <p class="text-container">
+                  Kia ora, this is a space where I explore and grow as an artist. With the goal to creating something
+                  beautiful, I am learning how others use programming to produce visuals, while I am slowing carving a code sculpture. 
+              </p>
+              <p class="text-container">
+                This space is always be incomplete, and you may see changes overtime...
+              </p>
+              <br>
+              <br>
+                  <div class="flex-title">
+                  <a class="btn" href="./Pages/creative-code.html">Creative Coding Journal</a>
+                  <!-- <a class="btn" href="./Pages/data-story.html">Data Story Telling</a>
+                  <a class="btn" href="./Pages/hello.html" style="padding: 0.4rem 2rem;">Talk to Me &#128064;</a> -->
+                </div>
+
+            </div>
+    
+            <div class="gallery" id="galleryImg" >
+                <svg class="shape-gallery" viewbox="0 0 383.2 514.2"  >
+                <style type="text/css">
+                    .st0{fill:#143D60;}
+                    .st1{fill:#fff;}
+                    .st2{fill:#86a771;}
+                    .st3{fill:#dda2c6;}
+                    .st4{fill:#323332;}
+                </style>
+                <g id="Layer_1" class="shape-gallery" onclick="openPage('Layer_1', this, 'red')">
+                    <path class="st0" d="M296.4,254.8l-9.2,140.2c0,0,7.8-38-23.7-56.1c-29.2-16.7-56.2-7.4-64.5,13.6c-4.5,11.4-13.4,51.2-31,58.9
+                        s-24.1-1.1-46.2-4.1c-15.4-2.1-30,1.4-37,17.3l23.8-61.5l64-40.7l55.8-7.6L296.4,254.8z"/>
+                    <path class="st1" d="M230.8,330c-23.6,1.2-32.9,15.2-41.4,42.2c-8.4,27-14.4,41.4-35.5,39.7s-24.5-11-49-5.9s-22.2,27.2-19.7,34.8
+                        c2.5,7.6,7.9,18.4,28.2,21c20.3,2.5,18.6,18.6,20.3,30.4c1.7,11.8,12.7,22,31.3,18.6c18.6-3.4,32.1-25.3,35.5-38
+                        c3.4-12.7,5.9-27,24.5-32.1c18.6-5.1,39.7-11.8,55.7-29.6C296.7,393.3,295,326.6,230.8,330z"/>
+                </g>
+                <g id="Layer_2" class="shape-gallery" onclick="openPage('Layer_2', this, 'green')">
+                    <path class="st1" d="M370.4,283.2c0,0,15.8-11.3,4.5-21.4c-11.3-10.1-26.5-10.6-25.3-24.8c1.7-20.3-7.9-28.7-7.9-28.7l-45.3,47
+                        L370.4,283.2z"/>
+                    <path class="st2" d="M296.4,255.3l74.1,27.9c0,0-72.1,29.3-82.2,91.2L296.4,255.3z"/>
+                </g>
+                <g id="Layer_3" class="shape-gallery" onclick="openPage('Layer_3', this, 'blue')">
+                    <polygon class="st4" points="5.4,362.4 108.7,362.4 52.5,259.1 	"/>
+                    <polygon class="st2" points="108.7,362.4 84.7,423.6 5.4,362.4 	"/>
+                </g>
+                <g id="Layer_4" class="shape-gallery" onclick="openPage('Layer_4', this, 'orange')">
+                    <polygon class="st1" points="108.1,362.4 172.6,321.9 109.8,219.4 51.9,259.1 	"/>
+                    <polygon class="st3" points="172.6,321.9 230,315.6 169.4,261.2 109.8,219.4 172.3,321.5 172.3,321.9 172.6,321.9 172.6,321.9 	"/>
+                </g>
+                <g id="Layer_5" class="shape-gallery" >
+                    <path class="st4" d="M181.8,234.5l68.9,70.7l92.2-97.4c0.5-3,0.8-6.1,0.8-9.3c0-29.1-31.2-51.6-60.3-51.6
+                        C281.2,146.9,181.8,234.5,181.8,234.5z"/>
+                    <ellipse class="st1" cx="218" cy="267.8" rx="49.8" ry="49.7"/>
+                </g>
+                <g id="Layer_6" class="shape-gallery" >
+                    <path class="st5" d="M109.8,219.4"/>
+                    <path class="st2" d="M211.9,219.5c0,0-32.6-0.1-43.3,41.6l-58.8-41.6L211.9,219.5z"/>
+                    <rect x="109.8" y="121.1" class="st1" width="102.5" height="98.3"/>
+                    <polygon class="st0" points="109.8,219.4 51.9,259.1 109.8,121.1 	"/>
+                </g>
+                <g id="Layer_7" class="shape-gallery" >
+                    <polygon class="st0" points="49.3,144.8 71.5,152.7 33.6,177.1 58.6,187.8 22.6,210.9 44.4,218.7 6.2,243.3 31.3,252.2 90.1,118.4 
+                            "/>
+                    <polygon class="st1" points="61,103.8 109.8,121.1 140.4,52.5 	"/>
+                    <polygon class="st3" points="6.5,243.4 51.9,259.1 109.8,121.1 61,103.8 75.9,134.3 49.5,145.1 61.9,164.9 33.8,177.3 49.5,198.8 
+                        23,211.2 37.1,225.3 	"/>
+                </g>
+                <g id="Layer_8" class="shape-gallery" >
+                    <path class="st3" d="M211.9,219.5l71.4-72.7l-64.5-54.5c0,0,10.5,12.4-8.3,30L211.9,219.5z"/>
+                    <path class="st0" d="M283.3,146.7L195.3,20c0,0,8.2,15.6,4.5,25.1c-3.7,9.5,3.1,34,20.8,50.9S283.3,146.7,283.3,146.7z"/>
+                    <path class="st2" d="M109.8,121.9h100.8c0,0,21.3-17,8.9-31.9c-12.4-14.9-20.2-16.3-16.9-39.4s-11-44.4-40.8-46L109.8,121.9z"/>
+                </g>
+                </svg>
+            </div>
+    
         </div>
-        <div style="flex: auto;"></div>
-        <div class="top-nav">
-          <button><a href ="blog/reflection.html">Story</a></button>
-          <button><a href ="blog/technical-blog.html">Technical Blog</a></button>
-          <button><a href ="blog/Value-identity-LearningPlan.html">Value</a></button>
-      </div>
-    <!-- </div> -->
-  </div>
-    <div class ="Grid-cell">
-      <div class="Main-content">
-      <h2>B.Y.O. Cup Corner</h2>
-      <div class="monospaced">
-          _____                    _____                    _____            _____           _______         
-         /\    \                  /\    \                  /\    \          /\    \         /::\    \        
-        /::\____\                /::\    \                /::\____\        /::\____\       /::::\    \       
-       /:::/    /               /::::\    \              /:::/    /       /:::/    /      /::::::\    \      
-      /:::/    /               /::::::\    \            /:::/    /       /:::/    /      /::::::::\    \     
-     /:::/    /               /:::/\:::\    \          /:::/    /       /:::/    /      /:::/~~\:::\    \    
-    /:::/____/               /:::/__\:::\    \        /:::/    /       /:::/    /      /:::/    \:::\    \   
-   /::::\    \              /::::\   \:::\    \      /:::/    /       /:::/    /      /:::/    / \:::\    \  
-  /::::::\    \   _____    /::::::\   \:::\    \    /:::/    /       /:::/    /      /:::/____/   \:::\____\ 
- /:::/\:::\    \ /\    \  /:::/\:::\   \:::\    \  /:::/    /       /:::/    /      |:::|    |     |:::|    |
-/:::/  \:::\    /::\____\/:::/__\:::\   \:::\____\/:::/____/       /:::/____/       |:::|____|     |:::|    |
-\::/    \:::\  /:::/    /\:::\   \:::\   \::/    /\:::\    \       \:::\    \        \:::\    \   /:::/    / 
- \/____/ \:::\/:::/    /  \:::\   \:::\   \/____/  \:::\    \       \:::\    \        \:::\    \ /:::/    /  
-          \::::::/    /    \:::\   \:::\    \       \:::\    \       \:::\    \        \:::\    /:::/    /   
-           \::::/    /      \:::\   \:::\____\       \:::\    \       \:::\    \        \:::\__/:::/    /    
-           /:::/    /        \:::\   \::/    /        \:::\    \       \:::\    \        \::::::::/    /     
-          /:::/    /          \:::\   \/____/          \:::\    \       \:::\    \        \::::::/    /      
-         /:::/    /            \:::\    \               \:::\    \       \:::\    \        \::::/    /       
-        /:::/    /              \:::\____\               \:::\____\       \:::\____\        \::/____/        
-        \::/    /                \::/    /                \::/    /        \::/    /         ~~              
-         \/____/                  \/____/                  \/____/          \/____/                          
-      </div>
-      <div class="hello">
-
-        ___         ___         ___  ___  ___     
-        /\__\       /\  \       /\__\/\__\/\  \    
-       /:/  /      /::\  \     /:/  /:/  /::\  \   
-      /:/__/      /:/\:\  \   /:/  /:/  /:/\:\  \  
-     /::\  \ ___ /::\~\:\  \ /:/  /:/  /:/  \:\  \ 
-    /:/\:\  /\__/:/\:\ \:\__/:/__/:/__/:/__/ \:\__\
-    \/__\:\/:/  \:\~\:\ \/__\:\  \:\  \:\  \ /:/  /
-         \::/  / \:\ \:\__\  \:\  \:\  \:\  /:/  / 
-         /:/  /   \:\ \/__/   \:\  \:\  \:\/:/  /  
-        /:/  /     \:\__\      \:\__\:\__\::/  /   
-        \/__/       \/__/       \/__/\/__/\/__/    
-   
-      </div>
-      
-  
-  <div class="Content">
-      <p>Kia ora Taiao! (Hello World!)<br>        
-         <h3>ASCII ART to learn Html Space</h3> 
-         This is a universe yet to discover... I have so much to learn! ((&nbsp; ͡• ʖ&nbsp; ͡• )))<br>
-         This week, I am discovering Ascii Art. There is a lot of space practicing at first using <strong>&amp;nbsp;</strong> to make non-breaking space.
-         Regular space: <strong>&amp;nbsp;</strong> Two spaces gap: <strong>&amp;ensp;</strong>  Four spaces gap: <strong>&amp;emsp;</strong> <br>        
-         <br>
-         You can also put it on <b> CSS styling</b> using <b> white-space: pre</b> if you copy and paste from some generator website like I did :-)
-        However, it come accross with a problem when you change screen size that I realize when I inspect the source code. I am guessing maybe to change font size for different screen size.
-      </p>
-      <p>
-        Click here to have fun generating your ASCII text in a new tab!!! &#128516
-      </p>
-        <button class="btn-inline">
-          <a href="http://patorjk.com/software/taag/#p=display&amp;f=Alpha&amp;t=hello" target="_blank" rel="noopener noreferrer" >ASCII Generator </a> <br>
-        </button>
-        <button class="btn-inline">
-          <a href="https://www.w3schools.com/charsets/ref_emoji.asp" target="_blank" rel="emoji" >HTML ref_emoji </a> <br>
-        </button>
-        <button class="btn-inline">
-          <a href ="blog/emotional-intelligence.html">More Blog Post</a>
-        </button>
+    
+        </div>
     </div>
-  </div>
+     
 
-  <div class ="Grid-cell">
-<div class ="Side-content">
-  
-  <div class="weatherBoard">
-    <h3>Weather Today</h3>
-    <iframe id="widget-iframe" width="100%" height= "200px"
-      src="https://services.metservice.com/weather-widget/widget?params=blue|medium|portrait|days-3|classic&amp;loc=auckland&amp;type=urban" allowtransparency="true" style="border:none"></iframe>
-  </div>
-    <div class="notes">
-        <h3>Link to Cheatsheet &amp; Tools: </h3> 
-        <ul>
-        <li><a href="blog/html-css.html" target="_blank" rel="CSS reference" >My CSS Playground</a></li>
-        <li><a href="blog/js-fundamentals.html" target="_blank" rel="CSS reference" >JavaScript Notes</a></li>
-        <li><a href="blog/problemSolving.html" target="_blank" rel="CSS reference" >JavaScript Notes</a></li>
-        <li><a href="https://pomofocus.io" target="_blank" rel="Pomodoro Focus Website" >Pomofocus.io </a></li>
-        <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" >Git Cheat Sheet </a></li>
-        <li><a href="https://htmlcheatsheet.com/" >Html CSS Cheatsheet</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank" rel="CSS color reference" >CSS Color </a></li>
-        <li><a href="https://emojipedia.org" target="_blank" rel="CSS color reference" >Emojipedia</a></li>
-        <li><a href="https://favicon.io/favicon-converter/" target="blank" rel="Favicon converter">Favicon Converter</a></li>
-      </ul>
-  </div>
-
-</div>
-
-</div>
-      </div> </div>
-
-  <footer>
-    Copyright @ Curious Earthworm 2021
-  </footer>
-
-</body>
+    <script src="./Drawings/gallery.js"></script>
+  </body>
 </html>

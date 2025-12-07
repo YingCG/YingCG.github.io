@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pattern</title>
+    <style>
+      figure {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      figure::before {
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 100%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+      }
+      figure:hover {
+        animation: bloom ease-in-out 0.75s forwards;
+        transform: rotate(360deg);
+        background-color: blue;
+      }
+
+      figure:hover::before {
+        animation: circle 0.75s;
+      }
+      @keyframes circle {
+        0% {
+          opacity: 0.5;
+          background: rgba(213, 156, 34, 0.2);
+        }
+        40% {
+          opacity: 1;
+          background: rgba(213, 34, 160, 0.2);
+        }
+        100% {
+          width: 200%;
+          height: 200%;
+          opacity: 0;
+        }
+      }
+
+      @keyframes bloom {
+        0% {
+          filter: grayscale(0.8);
+        }
+        40% {
+          filter: grayscale(0.5);
+        }
+        100% {
+          filter: grayscale(0);
+        }
+      }
+      .list-of-dot {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .list-of-dot i {
+        height: 25px;
+        width: 25px;
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      .list-of-dot i:hover {
+        animation: bloom ease-in-out 0.25s forwards;
+        transform: rotate(360deg);
+        color: white;
+      }
+
+      i:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      i:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      i:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      i:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+      i:nth-child(6) {
+        animation-delay: 0.5s;
+      }
+      i:nth-child(7) {
+        animation-delay: 0.6s;
+      }
+      i:nth-child(8) {
+        animation-delay: 0.7s;
+      }
+      i:nth-child(9) {
+        animation-delay: 0.8s;
+      }
+      i:nth-child(10) {
+        animation-delay: 0.9s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <input
+      type="button"
+      value="Refresh Page"
+      onClick="location.href=location.href"
+    /> -->
+    <button onClick="window.location.reload();">Reload</button>
+
+    <div>
+      <figure class="list-of-dot">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </figure>
+    </div>
+    <div></div>
+  </body>
+</html>

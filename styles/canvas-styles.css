@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #FFF2E0;
+    color: #143D60;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container{
+display: flex;
+padding: 1em;
+gap: 1em;
+}
+
+
+.logo{
+    width: 45px;
+    height: auto;
+}
+
+
+#landing{
+    background: radial-gradient(circle,#f2e5f7, rgb(255, 255, 235),#ceedfa );
+}
+.main-container{
+    height: 100%;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container{
+    display: flex;
+    padding: 1rem 1rem 0 1rem ;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-title{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    /* padding: 1rem; */
+}
+.title{
+    color: #143D60;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#generate{
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: white ;
+    color: #B771E5;
+    font-size: 15px;
+    /* margin: 1em; */
+    font-weight: 400;
+    border-radius: 3rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-layout{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+canvas{
+    width :300px;
+    height:300px;
+    margin: 1rem;
+    gap: 1rem;
+    background-color: #ffffff;
+}
+
+.flex-title a{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.gallery{
+    margin-top: 0;
+    padding-top: 0;
+height:100vh;
+}
+
+.text-container{
+    flex-direction: column;
+    padding: 1rem;
+    text-align: left;
+}
+
+.column-container{
+    padding: 3rem;
+    margin: 1rem;
+    width: 40vw;
+}
+
+.btn{
+    color:#fff;
+    background-color: #143D60;
+    padding: 0.5rem;
+    border: none;
+}
+
+.bright-mode{
+    color: #030637;
+    background-color: #FFF7F3;
+}
+
+.bright-mode .btn{
+    color: white;
+}
+
+.TopBottomLine{
+    margin-top: 0.5em;
+    text-decoration: underline overline;
+    text-underline-position: under;
+    flex-direction: row;
+    margin-block-end: 1em;
+    text-align: left;
+}
+
+.flex-column{
+    flex-direction: column;
+}
