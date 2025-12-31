@@ -18,6 +18,8 @@ body{
 .flex-container{
     display: flex;
     align-items: center;
+    padding: 0.3rem;
+    gap: 0.3rem
 }
 .page-container {
     position: relative;
@@ -30,6 +32,7 @@ h1{
     margin-block-end: 0.1em;
     font-size: 40px;
     font-weight: 400;
+    color: #91C6BC;
 }
 
 
@@ -48,9 +51,8 @@ h3{
 
 
 .logo{
-    width: 55px;
+    width: 45px;
     height: auto;
-    padding: 0.5rem;
 }
 
 .logo path{
@@ -119,7 +121,7 @@ h5{
 }
 
 .back-btn{
-    background-color: #235887;
+    background-color: #91C6BC;
     color: white;
     padding: 8px 20px;
     text-align: center;

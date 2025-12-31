@@ -7,11 +7,11 @@ window.addEventListener("load", function () {
   ctx.lineCap = "round";
   ctx.strokeStyle = "#FF6969";
   // console.log(ctx);
-  const fractal02 = new Fractal(canvas.width, canvas.height);
+  const fractal02 = new TurningFractal(canvas.width, canvas.height);
   fractal02.draw(ctx);
 });
 
-class Fractal {
+class TurningFractal {
   constructor(canvasWidth, canvasHeight) {
     this.canvasWidth = canvasWidth;
     this.canvasHeight = canvasHeight;

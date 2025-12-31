@@ -3,30 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/ying.ico" />
     <link rel="stylesheet" type="text/css" href="../styles/canvas-styles.css" />
     <link rel="stylesheet" href="../styles/shape.css" />
 
     <title>Creative Code</title>
   </head>
-  <body style="background-color: #fff">
+  <body>
     <div class="nav-container">
       <div class="flex-title">
-        <a href="../Pages/creative-code.html"
+        <a href="../index.html"
           ><img class="logo" src="../assets/journeyYing.svg" alt="logo"
         /></a>
         <div class="flex-column">
           <h2 class="title">A Place For Creativity and Curiosity</h2>
           <p class="TopBottomLine">
-            Some stories I come across while learning to code.
+            Sketches/stories inspired by nature along my coding adventure.
           </p>
         </div>
       </div>
       <div class="flex-title">
-        I am currently learning
+        I explore
         <a class="btn" href="./algorithm-art.html">Algorithm Art</a>
-        & starting to explore
-        <a class="btn" href="./generative-art.html"> Generative Art</a>
+        and create
+        <a class="btn" href="./natures.html"> Nature Journaling</a>
       </div>
     </div>
     <div class="square-list">
@@ -47,36 +47,41 @@
         </p>
       </div>
       <div class="square" id="square3">
-        <a href="https://yingcg.github.io/dev-journal/" target="_blank"
-          ><h3>Dev Journal</h3>
-        </a>
+        <a href="../Pages/algorithm-art.html"><h3>Algorithm Drawings</h3> </a>
         <p>
-          This is a old-ish developer journal where i keep track of my practice
-          project. One day! you know one day I will go back to it and tidy up...
+          Fractal are patterns that are created and repeating using different
+          scales in an ongoing loop.
         </p>
+        <p></p>
+        <svg width="200" height="130">
+          <path
+            d="M 228 0 C 172.772 0 128 44.772 128 100 L 128 0 L 0 0 L 0 28 C 0 83.228 44.772 128 100 128 L 0 128 L 0 256 L 28 256 C 83.228 256 128 211.228 128 156 L 128 256 L 256 256 L 256 228 C 256 172.772 211.228 128 156 128 L 256 128 L 256 0 Z"
+            fill="#1581BF"
+            transform="scale(0.5)"
+          ></path>
+          <rect x="150" y="10" fill="#FDEDED" width="30" height="75"></rect>
+          <circle cx="100" cy="40" r="20" fill="#FDEDED"></circle>
+          <line
+            x1="40"
+            y1="60"
+            x2="120"
+            y2="120"
+            stroke="#FDEDED"
+            stroke-width="3"
+          ></line>
+        </svg>
       </div>
       <div class="square" id="square4">
-        <a href="../Pages/algorithm-art.html"><h3>Algorithm Art</h3> </a>
-        <p>
-          ASCII ART is the first form of computer art that I came across when I
-          started learning to code. To motivate myself and get used to the cold
-          syntax, I looked for a fun and creative way and see how strings of
-          text come together like a work of art.
-        </p>
-      </div>
-      <div class="square dark-text" id="square5">
         <a href="../Pages/generative-art.html"><h3>Generative Art</h3> </a>
         <p>Generative Art</p>
       </div>
-      <div class="square dark-text" id="square6">
-        <a href="../Pages/data-Illustration.html"
-          ><h3>How to create data illustration?</h3>
-        </a>
-        <p>
-          This note demonstrates how to combine statistics and drawings to
-          convey information and evoke emotional responses.
-        </p>
+      <div class="square dark-text" id="square5">
+        <a href="../Pages/moon.html"><h3>Moon Calendar</h3></a>
+        <div class="shapescanvas" style="background-color: #222222"></div>
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="../Drawings/moon.js"></script>
       </div>
+      <div class="square dark-text" id="square6"></div>
       <div class="square" id="square7"></div>
       <div class="square" id="square8"></div>
       <div class="square" id="square9"></div>

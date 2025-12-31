@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
   ctx.lineCap = "round";
   ctx.strokeStyle = "#38558aff";
 
-  class Fractal {
+  class FractalFans {
     constructor(canvasWidth, canvasHeight) {
       this.canvasWidth = canvasWidth;
       this.canvasHeight = canvasHeight;
@@ -36,10 +36,6 @@ window.addEventListener("load", function () {
     }
   }
 
-  const fractal01 = new Fractal(canvas.width, canvas.height);
-  fractal01.draw(ctx);
-
-  class Particle {}
-
-  class Rain {}
+  const fractal02 = new FractalFans(canvas.width, canvas.height);
+  fractal02.draw(ctx);
 });

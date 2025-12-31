@@ -1,0 +1,6 @@
+.dialogue{
+  width: 300px;
+ height: 300px;
+  padding: 1em;
+  text-wrap: wrap;
+}

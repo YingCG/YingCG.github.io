@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/ying.ico" />
+    <link rel="stylesheet" type="text/css" href="../styles/canvas-styles.css" />
+    <link rel="stylesheet" href="../styles/shape.css" />
+    <title>SVG Shapes Drawing</title>
+  </head>
+  <body style="background-color: #fff">
+    <div class="nav-container">
+      <div class="flex-title">
+        <a href="../index.html"
+          ><img class="logo" src="../assets/journeyYing.svg" alt="logo"
+        /></a>
+        <div class="flex-column">
+          <h2 class="title">A Place For Creativity and Curiosity</h2>
+          <p class="TopBottomLine">
+            Some stories I come across while learning to code.
+          </p>
+        </div>
+      </div>
+      <div class="flex-title">
+        I am currently learning
+        <a class="btn" href="./algorithm-art.html">Algorithm Art</a>
+        & enjoying
+        <a class="btn" href="./creative-code.html"> Creative Coding</a>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <h1>SVG Shapes Drawing</h1>
+      <div class="grid-layout">
+        <svg width="100vw" height="100vh">
+          <rect x="800" y="100" fill="blue" width="100" height="200"></rect>
+          <circle cx="550" cy="200" r="50" fill="pink"></circle>
+          <line
+            x1="500"
+            y1="200"
+            x2="700"
+            y2="350"
+            stroke="blue"
+            stroke-width="3"
+          ></line>
+
+          <path d="M 150 50 L75 200 L225 200 z" fill="orange"></path>
+          <path
+            d="M 150 50 L 75 200 L 225 200 C 225 200 150 150 150 50"
+            fill="teal"
+          ></path>
+          <path d="M 350 50 L 255 200 L 450 200 Z" fill="brown"></path>
+          <path
+            d="M 350 50 L 255 200 L 450 200 C 500 300 350 400 350 50"
+            fill="teal"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
