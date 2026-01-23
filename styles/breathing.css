@@ -1,0 +1,103 @@
+.description {
+  padding: 0.5rem;
+  font-size: 13px;
+  line-height: 17px;
+  float: right;
+}
+.breating-focus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 65vh;
+}
+.circle {
+  width: 15rem;
+  height: 15rem;
+  animation: breath ease-in-out 20s infinite;
+  border-radius: 50%;
+      animation-delay: 0s;
+
+}
+
+.breating-instruction::before {
+  animation: instruction ease-in-out 20s infinite;
+  content: "";
+
+}
+.breating-instruction {
+  z-index: 7;
+  margin-top: -6%;
+  text-align: center;
+}
+
+@keyframes instruction {
+  0% {
+    color: #4988c4;
+    content: "Relax";
+    font-size: 1.2rem;
+  }
+  20% {
+    color: #006a71;
+    content: "Inhale";
+    font-size: 1.2rem;
+  }
+  40% {
+    color: #006a71;
+    content: "Inhale";
+    font-size: 1.2rem;
+  }
+  
+  50% {
+    color: #79c9c5;
+    content: "Hold";
+    font-size: 1.2rem;
+  }
+  60% {
+    color: #fff;
+    content: "Hold";
+    font-size: 1.2rem;
+  }
+  65% {
+    color: #fff;
+    content: "Exhale";
+    font-size: 1.2rem;
+  }
+  100% {
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #4988c4;
+    content: "Exhale";
+  }
+}
+
+@keyframes breath {
+  0% {
+    background-color: #c5d89d;
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  10% {
+    background-color: #4988c4;
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  40% {
+    background-color: #79c9c5;
+    transform: scale(3);
+    opacity: 1;
+  }
+  70% {
+    background-color: #4988c4;
+    transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    background-color: #c5d89d;
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}

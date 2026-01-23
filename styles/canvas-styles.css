@@ -136,3 +136,9 @@ height:100vh;
 .flex-column{
     flex-direction: column;
 }
+
+.content-within{
+    padding: 1rem;
+    width: 100%;
+    height: max-content;
+}

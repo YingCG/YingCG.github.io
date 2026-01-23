@@ -1,21 +1,21 @@
 window.addEventListener("load", function () {
-  const canvas = this.document.getElementById("canvas5");
+  const canvas = this.document.getElementById("canvas1");
   const ctx = canvas.getContext("2d");
   canvas.width = 300;
   canvas.height = 300;
-  console.log(ctx);
+  // console.log(ctx);
 
-  const snowflake1 = new Snowflake({
+  const pattern = new Crumb({
     height: canvas.height,
     width: canvas.width,
     color: "#ff0000",
     strokeColor: "#ffff00",
     background: "#5A7ACD",
   });
-  snowflake1.draw(ctx);
+  pattern.draw(ctx);
 });
 
-class Snowflake {
+class Crumb {
   constructor(properties) {
     this.properties = properties;
   }
