@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing using Canvas</title>
+    <link rel="stylesheet" type="text/css" href="../styles/animation.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2>Hello</h2>
+      <canvas class="square-array" width="1000px" height="600px"> </canvas>
+    </div>
+    <script>
+      let canvas = document.getElementsByClassName("square-array")[0];
+      <!-- get by class name return an array, therefore, I need to select the first item. better practice is to get by ID -->
+      let context = canvas.getContext("2d");
+
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 3; j++) {
+          let width = 80;
+          let height = 80;
+          let gap = 20;
+          let x = 100 + (width + gap) * i;
+          let y = 100 + (height + gap) * j;
+          context.beginPath();
+          context.rect(x, y, width, height);
+          context.stroke();
+
+          context.beginPath();
+          context.arc(x + gap * 2, y + gap * 2, width / 2 - 10, 0, Math.PI * 2);
+          context.stroke();
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,8 +1,8 @@
 window.addEventListener("load", function () {
   const canvas = this.document.getElementById("canvas1");
   const ctx = canvas.getContext("2d");
-  canvas.width = 300;
-  canvas.height = 300;
+  canvas.width = 250;
+  canvas.height = 250;
   // console.log(ctx);
 
   const pattern = new Crumb({
@@ -36,7 +36,7 @@ class Crumb {
       0,
       0,
       this.properties.width / 2,
-      this.properties.height / 2
+      this.properties.height / 2,
     );
 
     context.beginPath();

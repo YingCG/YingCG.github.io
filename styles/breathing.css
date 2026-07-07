@@ -1,7 +1,17 @@
+.nav-container{
+    z-index: 3;
+
+}
+.top-nav{
+  z-index: 3;
+
+}
+
+
 .description {
   padding: 0.5rem;
-  font-size: 13px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   float: right;
 }
 .breating-focus {
@@ -10,14 +20,24 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 65vh;
+  height: 100%;
+translate: 0 -10rem;
+z-index: -1;
+
 }
-.circle {
+.breathing-circle {
   width: 15rem;
   height: 15rem;
   animation: breath ease-in-out 20s infinite;
   border-radius: 50%;
-      animation-delay: 0s;
+  animation-delay: 2s;
+        background-color: #e2a5f1;
+
+        background-size: 50% 50%;
+        animation: gradient 25s ease-in-out infinite;
+        animation: breath 25s ease-in-out infinite;
+        overflow: hidden;
+          z-index: 2;
 
 }
 
@@ -27,8 +47,7 @@
 
 }
 .breating-instruction {
-  z-index: 7;
-  margin-top: -6%;
+  z-index: 3;
   text-align: center;
 }
 
@@ -39,65 +58,183 @@
     font-size: 1.2rem;
   }
   20% {
-    color: #006a71;
+    color: #4988c4;
+    content: "Inhale";
+    font-size: 1.2rem;
+  }
+  30% {
+    color: #7a82b3;
     content: "Inhale";
     font-size: 1.2rem;
   }
   40% {
-    color: #006a71;
+    color: #7a82b3;
     content: "Inhale";
     font-size: 1.2rem;
   }
   
   50% {
-    color: #79c9c5;
+    color: #ffffff;
     content: "Hold";
     font-size: 1.2rem;
   }
   60% {
-    color: #fff;
+    color: #ffffff;
     content: "Hold";
     font-size: 1.2rem;
   }
-  65% {
-    color: #fff;
+  70% {
+    color: #ffffff;
     content: "Exhale";
     font-size: 1.2rem;
+  }
+  80% {
+    color: #ffffff;
+    content: "Exhale";
+    font-size: 1.2rem;
+  }
+  90% {
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #98c5b8;
+    content: "Exhale";
   }
   100% {
     background-color: transparent;
     font-size: 1.2rem;
-    color: #4988c4;
-    content: "Exhale";
+    color: #98c5b8;
+    content: "Relax";
   }
 }
 
 @keyframes breath {
   0% {
-    background-color: #c5d89d;
+    background-color: #fce7b0;
     transform: scale(1);
     opacity: 0;
   }
 
   10% {
-    background-color: #4988c4;
+    background-color: #8b6ae4;
     transform: scale(1);
     opacity: 0.5;
   }
-
+  20% {
+    background-color: #8b6ae4;
+    transform: scale(3);
+    opacity: 0.5;
+  }
+  30% {
+    background-color: #8b6ae4;
+    transform: scale(3);
+    opacity: 0.5;
+  }
   40% {
-    background-color: #79c9c5;
+    background-color: #6b9e7b;
     transform: scale(3);
     opacity: 1;
   }
-  70% {
-    background-color: #4988c4;
+  50% {
+    background-color: #6b9e7b;
     transform: scale(3);
     opacity: 1;
+  }
+  60% {
+    background-color: #6ccc97;
+    transform: scale(3);
+    opacity: 1;
+  }
+  75% {
+    background-color: #6ccc97;
+    transform: scale(1);
+    opacity: 1;
+  }
+  80% {
+    background-color: #af9eec;
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  90% {
+    background-color: #af9eec;
+    transform: scale(1);
+    opacity: 0.5;
   }
   100% {
-    background-color: #c5d89d;
+    background-color: #af9eec;
     transform: scale(1);
     opacity: 0.5;
   }
 }
+
+ .bubblebg {
+        display: flex;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        z-index: 100;
+      }
+      
+      figure{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        overflow: hidden;
+
+      }
+
+ @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+  
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      } 
+
+      .list-of-dots {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 10s;
+        background-color: transparent;
+        overflow: hidden;
+      }
+      
+      .dot {
+        width: 3rem;
+        height: 3rem;
+        animation: gradient-effect ease-in-out 10s infinite;
+        border-radius: 50%;
+        overflow: hidden;
+        animation-delay: 3s;
+
+      }
+      
+      @keyframes gradient-effect {
+        0% {
+          background-color: transparent;
+          overflow: hidden;
+        }
+        
+        10%{
+           transform: scale(1);
+
+        }
+        100% {
+          background-color: rgb(255, 255, 255);
+          /* mix-blend-mode: multiply; */
+          transform: scale(5);
+          opacity: 0;
+          overflow: hidden;
+        }
+        
+      }

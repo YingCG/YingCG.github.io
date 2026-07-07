@@ -1,8 +1,8 @@
 window.addEventListener("load", function () {
   const canvas = this.document.getElementById("canvas5");
   const ctx = canvas.getContext("2d");
-  canvas.width = 300;
-  canvas.height = 300;
+  canvas.width = 250;
+  canvas.height = 250;
 
   const tree = new TreeFractal({
     width: canvas.width,

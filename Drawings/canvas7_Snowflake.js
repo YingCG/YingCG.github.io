@@ -1,27 +1,28 @@
 window.addEventListener("load", function () {
-  const canvas = document.getElementById("canvas6");
+  const canvas = document.getElementById("canvas7");
   const ctx = canvas.getContext("2d");
 
   canvas.width = 250;
   canvas.height = 250;
 
-  const fractalTree = new FractalTree({
+  const snowflake = new Snowflake({
     height: canvas.height,
     width: canvas.width,
-    storeColor: "#0C7779",
-    lineWidth: 20,
+    storeColor: "#7cb344",
+    lineWidth: 10,
     lineCap: "round",
     size: canvas.width * 0.2,
-    sides: 5,
-    maxLevel: 7,
+    sides: 6,
+    maxLevel: 3,
     scale: 0.7,
     spread: 0.5,
+    branches: 2,
   });
 
-  fractalTree.draw(ctx);
+  snowflake.draw(ctx);
 });
 
-class FractalTree {
+class Snowflake {
   constructor(properties) {
     this.properties = properties;
   }
@@ -51,7 +52,7 @@ class FractalTree {
   }
 
   #drawLine(context, level) {
-    const { maxLevel, size, scale, spread } = this.properties;
+    const { maxLevel, size, scale, spread, branches } = this.properties;
 
     if (level > maxLevel) return;
     context.beginPath();
@@ -59,20 +60,21 @@ class FractalTree {
     context.lineTo(size, 0);
     context.stroke();
 
-    context.save();
-    context.translate(size, 0);
-    context.scale(scale, scale);
+    for (let i = 0; i < branches; i++) {
+      context.save();
+      context.translate(size - (size / branches) * i, 0);
+      context.scale(scale, scale);
 
-    context.save();
-    context.rotate(spread);
-    this.#drawLine(context, level + 1);
-    context.restore();
+      context.save();
+      context.rotate(spread);
+      this.#drawLine(context, level + 1);
+      context.restore();
 
-    context.save();
-    context.rotate(-spread);
-    this.#drawLine(context, level + 1);
-    context.restore();
-
-    context.restore();
+      context.save();
+      context.rotate(-spread);
+      this.#drawLine(context, level + 1);
+      context.restore();
+      context.restore();
+    }
   }
 }

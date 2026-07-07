@@ -1,8 +1,8 @@
 window.addEventListener("load", function () {
   const canvas = this.document.getElementById("canvas4");
   const ctx = canvas.getContext("2d");
-  canvas.width = 300;
-  canvas.height = 300;
+  canvas.width = 250;
+  canvas.height = 250;
   ctx.lineWidth = 10;
   ctx.lineCap = "round";
   ctx.strokeStyle = "#FF6969";

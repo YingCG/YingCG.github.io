@@ -22,9 +22,9 @@ body{
     gap: 0.3rem
 }
 .page-container {
-    position: relative;
-    height: 95vh;
-  }
+  width: 100vw;
+  height: 100vh;
+}
 
 h1{
     font-family: 'Roboto Slab', serif;
@@ -46,7 +46,8 @@ h3{
     display: flex;
     position: relative;
     flex-wrap: wrap;
-
+  /* align-items: flex-start; */
+  justify-content: flex-start;
 }
 
 
@@ -63,6 +64,8 @@ h3{
     display: flex;
     margin: 0.5rem;
         align-items: center;
+            height: 3vh;
+
 
 }
 .top-nav button{
@@ -87,6 +90,7 @@ button{
 
 button:hover{
     background-color: thistle;
+
 }
 
 button a{
@@ -96,7 +100,7 @@ button a{
 }
 
 button:hover a{
-    color:#006A71;
+                color: #143d60;
 }
 
 .Content{
@@ -130,7 +134,9 @@ h5{
 }
 
 .back-btn:hover{
-    background-color: #dea8c2;
+    background-color: #4988c4;
+    border-radius: 5rem;
+
 }
 
 .column-Content{

@@ -1,7 +1,7 @@
  .bubblebg {
         display: flex;
-        width: 100vw;
-        height: 100%;
+        width: 100%;
+        height: auto;
         overflow: hidden;
         z-index: 100;
       }
@@ -75,11 +75,13 @@
       @keyframes gradient-effect {
         from {
           background-color: transparent;
+          overflow: hidden;
         }
         to {
           background-color: #121b5a;
-          transform: scale(3);
+          transform: scale(2);
           opacity: 0;
           overflow: hidden;
         }
+        
       }

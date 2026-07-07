@@ -1,144 +1,195 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-}
-body{
-    color: #143D60;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.nav-container{
-display: flex;
-padding: 1em;
-gap: 1em;
+body {
+  color: #143d60;
+  margin: 0;
+  padding: 0;
 }
 
-
-.logo{
-    width: 45px;
-    height: auto;
+.nav-container {
+  display: flex;
+  padding: 1em;
+  gap: 1em;
 }
 
-
-#landing{
-    background: radial-gradient(circle,#f2e5f7, rgb(255, 255, 235),#ceedfa );
-}
-.main-container{
-    height: 100%;
-    text-align: center;
+.logo {
+  width: 45px;
+  height: auto;
 }
 
-.flex-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#landing {
+  background: radial-gradient(circle, #f2e5f7, rgb(255, 255, 235), #ceedfa);
 }
-.nav-container{
-    display: flex;
-    padding: 1rem 1rem 0 1rem ;
-    justify-content: space-between;
-    align-items: center;
-}
-.flex-title{
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-    /* padding: 1rem; */
-}
-.title{
-    color: #143D60;
-    font-family: 'Courier New', Courier, monospace;
+.main-container {
+  height: 100%;
+  text-align: center;
 }
 
-#generate{
-    display: flex;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: white ;
-    color: #B771E5;
-    font-size: 15px;
-    /* margin: 1em; */
-    font-weight: 400;
-    border-radius: 3rem;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container {
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-title {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+.title {
+  color: #143d60;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.grid-layout{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-canvas{
-    width :300px;
-    height:300px;
-    margin: 1rem;
-    gap: 1rem;
-    background-color: #ffffff;
-}
-
-.flex-title a{
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
-    text-decoration: none;
+#generate {
+  display: flex;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: white;
+  color: #b771e5;
+  font-size: 15px;
+  /* margin: 1em; */
+  font-weight: 400;
+  border-radius: 3rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.gallery{
-    margin-top: 0;
-    padding-top: 0;
-height:100vh;
+.grid-layout {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+canvas {
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  gap: 1rem;
+  background-color: #ffffff;
 }
 
-.text-container{
-    flex-direction: column;
+.flex-title a {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.gallery {
+  margin-top: 0;
+  padding-top: 0;
+  height: 100vh;
+}
+
+.text-container {
+  flex-direction: column;
+  padding: 1rem;
+  text-align: left;
+}
+
+.column-container {
+  padding: 3rem;
+  margin: 1rem;
+  width: 40vw;
+}
+button{
+  transition: background 0.3s ease-in, transform .2s 0.1s ease-in-out border-radius 0.3 ease-in;
+  text-decoration: none;
+  background-color: #143d60;
+  padding: 0.5em 1em;
+  border: none;
+  
+}
+button:hover{
+  background-color: #323332;
+  border-radius: 50px;
+  color: #dda2c6;
+}
+.flex-title a:hover{
+  transform: scale(1.1);
+  color: #e3e5ff;
+
+}
+
+.bright-mode {
+  color: #030637;
+  background-color: #fff7f3;
+}
+
+.bright-mode .btn {
+  color: white;
+}
+
+.TopBottomLine {
+  margin-top: 0.5em;
+  text-decoration: underline overline;
+  text-underline-position: under;
+  flex-direction: row;
+  margin-block-end: 1em;
+  text-align: left;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.content-within {
+  padding: 1rem;
+  width: 100%;
+  height: max-content;
+}
+
+.handwriting-journal {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.journal-contents {
     padding: 1rem;
-    text-align: left;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+.journal-contents h1,
+.journal-contents h2,
+.journal-contents h3 {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.column-container{
-    padding: 3rem;
-    margin: 1rem;
-    width: 40vw;
+.journal-contents ol,
+ul,
+li {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.btn{
-    color:#fff;
-    background-color: #143D60;
-    padding: 0.5rem;
-    border: none;
+.journal-contents ul li::marker {
+  font-size: 0.5rem;
 }
 
-.bright-mode{
-    color: #030637;
-    background-color: #FFF7F3;
-}
-
-.bright-mode .btn{
-    color: white;
-}
-
-.TopBottomLine{
-    margin-top: 0.5em;
-    text-decoration: underline overline;
-    text-underline-position: under;
-    flex-direction: row;
-    margin-block-end: 1em;
-    text-align: left;
-}
-
-.flex-column{
-    flex-direction: column;
-}
-
-.content-within{
-    padding: 1rem;
-    width: 100%;
-    height: max-content;
+.title-bg {
+  background-color: #143d60;
+  color: #f2e5f7;
+  padding: 1px 1rem;
 }

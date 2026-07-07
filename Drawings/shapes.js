@@ -4,7 +4,7 @@
 const canvas = d3.select(".shapescanvas");
 const svg = canvas
   .append("svg")
-  .attr("height", "calc(100vh - 90px)")
+  .attr("height", "calc(100vh - 100px)")
   .attr("width", "100%");
 
 // append shapes to svg container

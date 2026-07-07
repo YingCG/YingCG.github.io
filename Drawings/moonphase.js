@@ -1,4 +1,5 @@
-const canvas = d3.select(".shapescanvas");
+const canvas = d3.select(".canvas");
+
 const svg = canvas
   .append("svg")
   .attr("width", "250px")
@@ -13,14 +14,6 @@ svg
   .attr("cx", "15%")
   .attr("cy", "50%")
   .attr("fill", "#F3CF7A");
-
-// svg
-//   .append("text")
-//   .text("Full Moon")
-//   .attr("x", "1%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
 
 // gibbous
 
@@ -49,13 +42,6 @@ svg
   .attr("cy", "50%")
   .attr("fill", "#F3CF7A")
   .attr("mask", "url(#gibbousMask)");
-// svg
-//   .append("text")
-//   .text("Gibbous Moon")
-//   .attr("x", "20%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
 
 // # half moon
 svg
@@ -71,13 +57,6 @@ svg
   .attr("x", "55%")
   .attr("y", "34%")
   .attr("fill", "#070f2b");
-// svg
-//   .append("text")
-//   .text("Half Moon")
-//   .attr("x", "50%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
 
 //Waxing Crescent
 
@@ -93,13 +72,6 @@ svg
   .attr("cx", "68%")
   .attr("cy", "50%")
   .attr("fill", "#070f2b");
-// svg
-//   .append("text")
-//   .text("Crescent Moon")
-//   .attr("x", "58.5%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
 
 //New Moon
 svg
@@ -114,10 +86,3 @@ svg
   .attr("cx", "90%")
   .attr("cy", "50%")
   .attr("fill", "#070f2b");
-// svg
-//   .append("text")
-//   .text("New Moon")
-//   .attr("x", "85%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,15 +23,19 @@
         </div>
       </div>
       <div class="flex-title">
-        I explore
-        <a class="btn" href="./algorithm-art.html">Algorithm Art</a>
-        and discover Nature through
-        <a class="btn" href="./natures.html">Journaling</a>
+        I am exploring
+        <button>
+          <a class="btn" href="./algorithm-art.html">Algorithm Art</a>
+        </button>
+        <!-- and discover Nature through
+        <button>
+          <a class="btn" href="./natures.html">Journaling</a>
+        </button> -->
       </div>
     </div>
     <div class="square-list">
       <div class="square" id="square1">
-        <a href="../Pages/breathing.html"><h3>Breath Exercise</h3> </a>
+        <a href="../Pages/breethe.html"><h3>Breath Exercise</h3> </a>
         <p>
           This is a CSS animation to help with meditation and focused breathing
           exercises.
@@ -75,15 +79,21 @@
       </div>
       <div class="square dark-text" id="square5">
         <a href="../Pages/moon.html"><h3>Moon Phase</h3></a>
-        <div class="shapescanvas" style="background-color: #222222"></div>
+        <div class="shapescanvas" style="background-color: #070f2b"></div>
         <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
         <script src="../Drawings/moon.js"></script>
         <p></p>
         <p>Rotation of the Earth --> <br />23-hour, 56 min, 4 sec</p>
         <p>Revolution of the Earth --> <br />365.2 days, Speed 30 km/s-1</p>
       </div>
-      <div class="square dark-text" id="square6"></div>
-      <div class="square" id="square7"></div>
+      <div class="square dark-text" id="square6">
+        <a href="../Pages/shapes.html"><h3>Drawing Shapes</h3></a>
+        <canvas id="square-circle"></canvas>
+        <script src="../Drawings/basicshapes.js"></script>
+      </div>
+      <div class="square" id="square7">
+        <a href="../Pages/data-art.html"><h3>Data Art</h3></a>
+      </div>
       <div class="square" id="square8"></div>
       <div class="square" id="square9"></div>
       <div class="square" id="square10"></div>

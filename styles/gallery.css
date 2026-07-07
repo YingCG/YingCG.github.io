@@ -4,15 +4,19 @@ svg {
 
 .st1:hover{
     fill: #fddab2;
+
 }
 .st2:hover{
     fill: #DA8359;
+
 }
 .st3:hover{
     fill: #FF6969;
+
 }
 .st0:hover{
     fill: #0B4619;
+
 }
 .st4:hover{
     fill: #6B8A7A;
@@ -38,7 +42,13 @@ svg {
   }
 
 .shape-gallery.shape-pages {
-    transform: scale(1.7);
+transition: bacground 0.3s ease-in, transform 0.2s 0.1s ease-in-out;
+    /* background-color: yellow;  */
+}
+
+.shape-gallery.shape-pages:hover {
+        transform: scale(1.7);
+
     z-index: 1000;
     /* background-color: yellow;  */
 }
