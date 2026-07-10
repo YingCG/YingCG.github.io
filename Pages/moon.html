@@ -23,21 +23,40 @@
       </div>
     </div>
     <div>
-      <h3 class="moon-title">
-        This is Moonphase in Auckland of 2026 for next 6 months
-      </h3>
-      <p class="content">
-        Rotation of the Earth --> 23-hour, 56 min, 4 sec Revolution of the Earth
-        --> 365.2 days, Speed 30 km/s-1
-      </p>
+      <div class="content">
+        <div class="moonphase-graphic">
+          <img src="../assets/moonsvg/fullmoon.svg" />
+          <img src="../assets/moonsvg/gibbousmoon.svg" />
+          <img src="../assets/moonsvg/halfmoon.svg" />
+          <img src="../assets/moonsvg/waxingCrescentMoon.svg" />
+          <img src="../assets/moonsvg/newmoon.svg" />
+          <h4>The Earth orbits the Sun, the Moon orbits the Earth.</h4>
+        </div>
+        <p>
+          The Earth circles around the Sun (Revolution) takes 365.2 days in
+          speed 30km/s.
+        </p>
+        <!-- <p>The rotation of the Earth is about 23-hour, 56 min, 4 sec.</p> -->
+        <p>
+          The moon circles around the Earth takes 27.3 days but it take 29.5
+          days to change from new moon to new moon
+        </p>
+      </div>
+
+      <h4 class="moon-title">Moonphase for next 6 months in Auckland (2026)</h4>
+
       <div class="moon-flexcontent">
         <!-- <p>New Moon Day</p> -->
         <div class="moonphase"></div>
       </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/d3@7"></script> -->
+    <p class="content">
+      As the moon orbit around earth continuosly, the amount of sunlight that is
+      visible from the moon changes
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
-    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    <script src="../Drawings/moonphase.js"></script>
     <script src="../Drawings/moon.js"></script>
   </body>
 </html>

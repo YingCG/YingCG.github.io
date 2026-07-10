@@ -1,12 +1,12 @@
 const moonIcons = {
   "New Moon": `
-    <svg width="40" height="40" viewBox="0 0 100 100">
+    <svg width="55" height="55" viewBox="0 0 100 100">
       <circle cx="50" cy="50" r="40" fill="#070f2b" stroke="#F3CF7A" stroke-width="3"/>
     </svg>
   `,
 
   "First Quarter": `
-    <svg width="40" height="40" viewBox="0 0 100 100">
+    <svg width="55" height="55" viewBox="0 0 100 100">
       <circle cx="50" cy="50" r="40" fill="#070f2b"/>
       <path d="M50 10
                A40 40 0 0 1 50 90
@@ -16,13 +16,13 @@ const moonIcons = {
   `,
 
   "Full Moon": `
-    <svg width="40" height="40" viewBox="0 0 100 100">
+    <svg width="55" height="55" viewBox="0 0 100 100">
       <circle cx="50" cy="50" r="40" fill="#F3CF7A"/>
     </svg>
   `,
 
   "Third Quarter": `
-    <svg width="40" height="40" viewBox="0 0 100 100">
+    <svg width="55" height="55" viewBox="0 0 100 100">
       <circle cx="50" cy="50" r="40" fill="#F3CF7A"/>
       <path d="M50 10
                A40 40 0 0 0 50 90
@@ -46,7 +46,7 @@ async function getMoonInfo() {
         console.log(firstfour);
         firstfour.forEach((moon) => {
           const div = document.createElement("div");
-          div.innerHTML = `${moonIcons[moon.moonphase]} <p class="moondesc"> ${moon.moonphase} </p>`;
+          div.innerHTML = `${moonIcons[moon.moonphase]} <p class="moondesc"> ${moon.moonphase} </p>  `;
           insertMoon.appendChild(div);
         });
 
