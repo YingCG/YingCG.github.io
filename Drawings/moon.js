@@ -1,123 +1,65 @@
-const canvas = d3.select(".shapescanvas");
-const svg = canvas
-  .append("svg")
-  .attr("width", "250px")
-  .attr("height", "auto")
-  .attr("object-fit", "contain");
+const moonIcons = {
+  "New Moon": `
+    <svg width="40" height="40" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#070f2b" stroke="#F3CF7A" stroke-width="3"/>
+    </svg>
+  `,
 
-// full moon
+  "First Quarter": `
+    <svg width="40" height="40" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#070f2b"/>
+      <path d="M50 10
+               A40 40 0 0 1 50 90
+               L50 10Z"
+            fill="#F3CF7A"/>
+    </svg>
+  `,
 
-svg
-  .append("circle")
-  .attr("r", 20)
-  .attr("cx", "15%")
-  .attr("cy", "50%")
-  .attr("fill", "#F3CF7A");
+  "Full Moon": `
+    <svg width="40" height="40" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#F3CF7A"/>
+    </svg>
+  `,
 
-// svg
-//   .append("text")
-//   .text("Full Moon")
-//   .attr("x", "1%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
+  "Third Quarter": `
+    <svg width="40" height="40" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="#F3CF7A"/>
+      <path d="M50 10
+               A40 40 0 0 0 50 90
+               L50 10Z"
+            fill="#070f2b"/>
+    </svg>
+  `,
+};
 
-// gibbous
+async function getMoonInfo() {
+  const url = "../data/moonphase.json";
 
-const defs = svg.append("defs");
-const mask = defs.append("mask").attr("id", "gibbousMask");
+  const insertMoon = document.querySelector(".moonphase");
 
-// white = visible
-mask
-  .append("rect")
-  .attr("width", "100%")
-  .attr("height", "100%")
-  .attr("fill", "#070f2b");
+  try {
+    const response = await fetch(url).then((res) =>
+      res.json().then((data) => {
+        const sixmonth = data.filter((_, index) => index < 26);
+        const firstfour = data.slice(0, 4);
 
-// black = hidden (cuts the moon)
-mask
-  .append("circle")
-  .attr("r", 20)
-  .attr("cx", "30%") // offset creates gibbous shape
-  .attr("cy", "50%")
-  .attr("fill", "#F3CF7A");
+        console.log(firstfour);
+        firstfour.forEach((moon) => {
+          const div = document.createElement("div");
+          div.innerHTML = `${moonIcons[moon.moonphase]} <p class="moondesc"> ${moon.moonphase} </p>`;
+          insertMoon.appendChild(div);
+        });
 
-svg
-  .append("circle")
-  .attr("r", 20)
-  .attr("cx", "35%") // controls gibbous amount
-  .attr("cy", "50%")
-  .attr("fill", "#F3CF7A")
-  .attr("mask", "url(#gibbousMask)");
-// svg
-//   .append("text")
-//   .text("Gibbous Moon")
-//   .attr("x", "20%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
-
-// # half moon
-svg
-  .append("circle")
-  .attr("r", 18)
-  .attr("cx", "55%")
-  .attr("cy", "50%")
-  .attr("fill", "#F3CF7A");
-svg
-  .append("rect")
-  .attr("width", 18)
-  .attr("height", "50%")
-  .attr("x", "55%")
-  .attr("y", "34%")
-  .attr("fill", "#070f2b");
-// svg
-//   .append("text")
-//   .text("Half Moon")
-//   .attr("x", "50%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
-
-//Waxing Crescent
-
-svg
-  .append("circle")
-  .attr("r", 20)
-  .attr("cx", "70%")
-  .attr("cy", "50%")
-  .attr("fill", "#F3CF7A");
-svg
-  .append("circle")
-  .attr("r", 17)
-  .attr("cx", "68%")
-  .attr("cy", "50%")
-  .attr("fill", "#070f2b");
-// svg
-//   .append("text")
-//   .text("Crescent Moon")
-//   .attr("x", "58.5%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
-
-//New Moon
-svg
-  .append("circle")
-  .attr("r", 20)
-  .attr("cx", "90%")
-  .attr("cy", "50%")
-  .attr("fill", "#F3CF7A");
-svg
-  .append("circle")
-  .attr("r", 18)
-  .attr("cx", "90%")
-  .attr("cy", "50%")
-  .attr("fill", "#070f2b");
-// svg
-//   .append("text")
-//   .text("New Moon")
-//   .attr("x", "85%")
-//   .attr("y", 150)
-//   .style("fill", "white")
-//   .style("font-size", "8px");
+        sixmonth.forEach((day) => {
+          const div = document.createElement("div");
+          div.innerHTML = `<p class="moon"> ${day.now} </p>`;
+          insertMoon.appendChild(div);
+          //   console.log(day.moonphase, day.now);
+        });
+      }),
+    );
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+getMoonInfo();

@@ -112,6 +112,10 @@ button:hover a{
 }
 
 
+.page-title{
+    text-align: center;
+    color: white;
+}
 
 footer{
     font-size: 12px;
@@ -569,7 +573,53 @@ padding-inline-start: 0;
       column-count: 1;
   }
 }
+.moon-title{
+    text-align: center;
+    color: #F3CF7A;
+}
+.content{
+    text-align: center;
+    color: #98c3ec;
+    padding: 0.5rem;
+}
+.moondesc{
+    color: #F3CF7A;
+    margin-left: 1rem;
+    font-size: small;
+    margin-bottom: 1rem;
+    
+}
 
+.mooninfo{
+    display: flex;
+    justify-content: center;
+}
+.moon{
+    padding: 0.5rem;
+    text-align: center;
 
+}
 
+.moon-flexcontent{
+    align-items: center;
+    color: #98c3ec;
+    flex: 0 0 100%;
+}
 
+.moonphase{
+    align-items: center;
+    padding: 1rem 5rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.moonphase div{
+        width: 25%;
+padding: 1rem 0.3rem;
+text-align: center;
+}
+.moon-flexcontent img{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+}
